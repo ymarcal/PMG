@@ -1,0 +1,803 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  <title>Função Externa</title>
+</head>
+
+
+<body>
+
+
+
+
+
+
+
+<div class="Section1">
+<table class="MsoNormalTable" style="width: 100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+      <td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" valign="top"> <b><span style="font-family: Arial;">Menu
+Funções</span></b><span style="font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+
+
+
+
+      <td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" align="right" valign="top"> <a href="ajustedecurva.html"><span style="font-size: 10pt; font-family: Arial;"><span style="text-decoration: none;"><span style=""><img style="border: 0px solid ; width: 17px; height: 17px;" alt="" src="imagens/image001.gif" v:shapes="_x0000_i1025" align="top" border="0" height="17" width="17"></span></span></span></a><span style="font-family: Arial;">&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Arial; color: blue;"><a href="menufuncoes.html"><span style="text-decoration: none;"><span style=""><img style="border: 0px solid ; width: 17px; height: 17px;" alt="" src="imagens/image002.gif" v:shapes="_x0000_i1026" align="top" border="0" height="17" width="17"></span></span></a></span><span style="font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 14pt; font-family: Arial; color: rgb(153, 0, 0);"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 14pt; font-family: Arial; color: rgb(153, 0, 0);">Função
+Externa<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Essa
+operação
+permite executar qualquer função externa ao R_DAT, sendo possível
+fornecer dados de entrada a partir das matrizes de trabalho e
+acrescentar os dados de saída da função às matrizes de trabalho.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+<span style="font-size: 10pt; font-family: Arial;"><span style=""></span>Clique no <span class="GramE">menu</span>
+&#8220;Funções &#9658; Função externa&#8221; ou no botão <img style="width: 22px; height: 22px;" alt="" src="imagens/image123.PNG">&nbsp;na
+Barra de Ferramentas<span style=""></span>.</span><span style="font-size: 10pt; font-family: Arial;"><br>
+
+
+
+
+
+
+
+Será
+apresentada a janela abaixo:</span>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 646px; height: 602px;" alt="" src="imagens/image124.PNG" v:shapes="_x0000_i1028" height="602" width="646"><o:p></o:p></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-family: Arial; color: maroon;">Descrição&nbsp;e
+Operação</span></b><small><small><small><small><small><small><b><span style="font-size: 14pt; font-family: Arial; color: rgb(153, 0, 0);"></span></b></small></small></small></small></small></small><br>
+
+
+
+
+
+
+
+<span style="font-size: 10pt; font-family: Arial;"></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">A janela é
+estruturada de forma que o usuário siga&nbsp;a sequência natural de
+operação, descrita a seguir. A figura acima ilustra um exemplo completo.</span></p>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 10pt; font-family: Arial;">Definição da função e das variáveis</span></b><small><span style="font-family: Arial;">&nbsp;</span></small></p>
+
+
+
+
+
+
+
+<span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; No campo
+&#8220;Função&#8221;, indique o nome da função externa que deseja executar (sem a
+extensão). São suportados os formatos usuais do MATLAB: .m, .mex e
+.dll. Não são suportados <span style="font-style: italic;">scripts</span>.
+O arquivo da função deve estar na lista de caminhos do MATLAB (<span style="font-style: italic;">path</span>) para ser
+encontrado.</span></p>
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Caso deseje, use o botão <img style="width: 24px; height: 24px;" alt="" src="imagens/image125.png">&nbsp;para
+localizar a função desejada e, caso necessário, acrescentar seu caminho temporariamente à&nbsp;</span><span style="font-size: 10pt; font-family: Arial;">lista de caminhos</span><span style="font-size: 10pt; font-family: Arial;"> do MATLAB.</span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ao indicar ou
+selecionar</span><span style="font-size: 10pt; font-family: Arial;"> uma função,
+sua ajuda (<span style="font-style: italic;">help</span>)
+será apresentada no campo "Ajuda", para facilitar a interface de dados
+de entrada e saída. Além disso, o texto à esquerda dos campos "Tipo de
+Entrada" e os campos "Variáveis de Saída" indicarão automaticamente os
+nomes das variáveis definidas no escopo do arquivo .m.</span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; No campo
+"Tipo de Entrada", indique como são as variáveis de&nbsp;entrada
+necessárias à operação. As variáveis propriamente ditas
+são&nbsp;apresentadas no campo "Variáveis de Entradas". As opções
+são:</span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp; -
+Ignorar (espaço em branco):&nbsp;</span><span style="font-size: 10pt; font-family: Arial;">A entrada não é
+considerada;</span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp; - </span><span style="font-size: 10pt; font-family: Arial;">Especificar:&nbsp;</span><span style="font-size: 10pt; font-family: Arial;">A entrada é
+indicada diretamente pelo usuário como uma expressão no campo
+"Entrada", usando a&nbsp;sintaxe padrão do MATLAB.</span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; &nbsp; Exemplos:</span></p>
+
+
+
+
+
+
+
+<span style="font-size: 10pt; font-family: Arial;"></span>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; &nbsp; &nbsp; - Número: <font face="Courier New">1.4</font></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; &nbsp; &nbsp; - Matriz: <font face="Courier New">[1, 2;
+4, 3]</font></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; &nbsp; &nbsp; </span><span style="font-size: 10pt; font-family: Arial;">- </span><span style="font-size: 10pt; font-family: Arial;">Texto: <font face="Courier New">'norm'</font></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; &nbsp; &nbsp; </span><span style="font-size: 10pt; font-family: Arial;">- </span><span style="font-size: 10pt; font-family: Arial;">Bloco de dados:
+<font face="Courier New">DADOS(:,2:6)</font></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; &nbsp; &nbsp; </span><span style="font-size: 10pt; font-family: Arial;">- </span><span style="font-size: 10pt; font-family: Arial;">Vetor: <font face="Courier New">0:2:20</font></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; &nbsp; &nbsp; </span><span style="font-size: 10pt; font-family: Arial;">- </span><span style="font-size: 10pt; font-family: Arial;">Expressão:
+<font face="Courier New">sin(pi/4)</font></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Arial;">- </span><span style="font-size: 10pt; font-family: Arial;">Vazio: <font face="Courier New">[]</font> </span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; font-family: Arial;"><small>&nbsp;</small></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp; - Nome do parâmetro:
+Será criada no campo "Entrada" a expressão correspondente ao parâmetro
+indicado. A entrada será um vetor contendo todo o parâmetro.</span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; &nbsp; Exemplos:</span></p>
+
+
+
+
+
+
+
+<span style="font-size: 10pt; font-family: Arial;"></span>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; &nbsp; &nbsp; -&nbsp;<font face="Courier New">DADOS(:,1)</font></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; &nbsp; &nbsp; - <font face="Courier New">DADOS(:,25)</font></span></p>
+
+
+
+
+
+
+
+<span style="font-family: Arial;">&nbsp;</span>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>É
+possível definir até dez variáveis de entrada, que devem ser
+preenchidas sequencialmente.</o:p></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Para limpar
+todas as variáveis de entrada, clique no botão <img style="width: 22px; height: 22px;" alt="" src="imagens/image126.png">.</span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"></span><span style="font-size: 10pt; font-family: Arial;"><o:p>Para
+tentar localizar as variáveis de entrada&nbsp;entre os parâmetros
+disponíveis, clique no botão <img style="width: 22px; height: 22px;" alt="" src="imagens/image127.png">.</o:p></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+<small><span style="font-family: Arial;">&nbsp;</span></small></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679;
+No campo
+"Variáveis de Saída", indique as variáveis de saída em formato válido
+como variáveis do MATLAB (texto contendo apenas letras sem
+acentos,&nbsp;números e sublinhado, começando por letra).</span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">É possível
+definir até dez variáveis de saída, que devem ser preenchidas
+sequencialmente. </span><span style="font-size: 10pt; font-family: Arial;">Não é
+necessário atribuir todas as variáveis de saída previstas na função.</span></p>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><b>Execução da função</b><br>
+
+
+
+
+&nbsp;<br>
+
+
+
+
+Depois de selecionar a função e as variáveis de entrada e saída, clique no botão&nbsp;</span><small><img style="width: 80px; height: 20px; font-family: Arial;" alt="" src="imagens/image128.PNG"></small><span style="font-size: 10pt; font-family: Arial;"> para que o R_DAT execute a função com as entradas indicadas e atribua os resultados às variáveis de saída.<br>
+
+
+
+
+&nbsp;<br>
+
+
+
+
+Caso ocorra algum problema na execução da função, o R_DAT informará ao usuário.<br>
+
+
+
+
+Caso a execução seja realizada com sucesso, as variáveis de saída serão
+atribuídas e listadas no campo "Saída", juntamente com o tamanho e
+classe.<br>
+
+
+
+
+&nbsp;<br>
+
+
+
+
+<b>Inclusão dos dados desejados</b><br>
+
+
+
+
+&nbsp;<br>
+
+
+
+
+Para incluir uma ou mais variáveis de saída às matrizes de trabalho, selecione-as no campo "Saída" e clique no botão </span><small><img style="width: 20px; height: 20px;" alt="" src="imagens/image129.PNG"></small><span style="font-size: 10pt; font-family: Arial;">. As variáveis incluídas são apresentadas no campo "Incluir".<br>
+
+
+
+
+Apenas as variáveis compatíveis com a matriz DADOS podem ser incluídas,
+ou seja, devem possuir o mesmo número de observações (linhas)
+apresentado no canto superior direito da janela. É possível incluir
+variáveis com múltiplas colunas, para as quais serão criados múltiplos
+parâmetros.<br>
+
+
+
+
+&nbsp;<br>
+
+
+
+
+Para excluir uma ou mais variáveis, selecione-as no campo "Incluir" e clique no botão </span><small><img style="width: 20px; height: 20px;" alt="" src="imagens/image130.PNG"></small><span style="font-size: 10pt; font-family: Arial;">.<br>
+
+
+
+
+&nbsp;<br>
+
+
+
+
+Para transpor uma ou mais variáveis, selecione-as no campo "Saída" e clique no botão </span><small><span style="font-family: Arial;"><img style="width: 20px; height: 20px;" alt="" src="imagens/image131.PNG"></span></small><span style="font-size: 10pt; font-family: Arial;">.
+Essa operação pode ser necessária caso uma variável de saída seja do
+tipo linha, pois as variáveis devem ser do tipo coluna para inclusão na
+matriz de dados. <br>
+
+
+
+
+&nbsp;<br>
+
+
+
+
+<b>Renomeação dos parâmetros</b><br>
+
+
+
+
+&nbsp;<br>
+
+
+
+
+Após inserir as variáveis desejadas, serão criados nomes de parâmetros
+no campo "Nomes dos Parâmetros". Para variáveis com apenas uma coluna,
+o nome de parâmetro será o próprio nome da variável. Para variáveis com
+mais de uma coluna, serão criados vários nomes de parâmetros a partir
+do nome da variável acrescido de uma numeração sequencial. Esses nomes
+podem ser alterados livremente pelo usuário (desde que não sejam
+vazios), no campo logo abaixo da lista de parâmetros.</span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><small><span style="font-family: Arial;">&nbsp;</span></small></p>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><small><span style="font-family: Arial;">&nbsp;&nbsp;</span></small><br>
+
+
+
+
+</p>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"></span><span style="font-size: 10pt; font-family: Arial;"></span><b style=""><span style="font-family: Arial; color: maroon;">Sair</span></b></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><small><span style="font-family: Arial;">&nbsp;</span></small></p>
+
+
+
+
+
+
+
+<span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Após definir
+todos os parâmetros e pressionar &#8220;OK&#8221;, os novos
+parâmetros serão&nbsp;acrescentados às matrizes de trabalho,
+antes do
+parâmetro &#8220;<span class="GramE">No.</span>OBS.&#8221;.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Para cancelar a
+operação, clique no botão "Cancela" e confirme.</span></p>
+
+
+
+
+
+
+
+&nbsp;<br>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+<table class="MsoNormalTable" style="background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+      <td style="padding: 0cm; width: 15pt;" valign="top" width="20"> <span style="font-size: 10pt; font-family: Arial;"><a href="ajustedecurva.html"><span style="text-decoration: none;"><span style=""><img style="border: 0px solid ; width: 17px; height: 17px;" alt="" src="imagens/image001.gif" v:shapes="_x0000_i1039"></span></span></a><o:p></o:p></span>
+      </td>
+
+
+
+
+
+
+
+      <td style="padding: 0cm;" valign="top"> <span style="font-size: 10pt; font-family: Arial;">&nbsp;Ajuste
+de curva<o:p></o:p></span> </td>
+
+
+
+
+
+
+
+      <td style="padding: 0cm;" align="right" valign="top"> <span class="GramE"><span style="font-size: 10pt; font-family: Arial;">Menu</span></span><span style="font-size: 10pt; font-family: Arial;"> Funções <o:p></o:p></span>
+      </td>
+
+
+
+
+
+
+
+      <td style="padding: 0cm; width: 15pt;" align="right" valign="top" width="20"> <span style="font-size: 10pt; font-family: Arial; color: blue;"><a href="menufuncoes.html"><span style="text-decoration: none;"><span style=""><img style="border: 0px solid ; width: 17px; height: 17px;" alt="" src="imagens/image002.gif" v:shapes="_x0000_i1040"></span></span></a></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

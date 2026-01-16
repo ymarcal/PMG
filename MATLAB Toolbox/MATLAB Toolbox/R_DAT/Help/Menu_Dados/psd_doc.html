@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Power Spectral Density estimate</title>
+
+
+</head>
+
+
+<body>
+
+<div class="Section1">
+<table class="MsoNormalTable" style="width: 100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+  <tbody>
+
+    <tr style="">
+
+      <td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" valign="top"> <span class="GramE"><b><span style="font-family: Arial;">Signal Processing Toolbox</span></b></span><b><span style="font-family: Arial;"></span></b><span style="font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+      <td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" align="right" valign="top"> <span style="font-size: 10pt; font-family: Arial;"><a href="validadeytempo.html"><span style="text-decoration: none;"><span style=""></span></span></a></span><span style="font-family: Arial;">&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Arial; color: blue;"><a href="criarparam.html"><span style="text-decoration: none;"><span style=""></span></span></a></span><span style="font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<font face="Arial"><br>
+
+<big><font color="#990000"><big><big>psd</big></big></font></big><br>
+
+&nbsp;<br>
+
+Estimate the Power Spectral Density (PSD) of a signal. <br>
+
+<br>
+
+<b><big><font color="#990000">Syntax</font></big></b><br>
+
+&nbsp;<br>
+
+<font face="Courier New">&nbsp;&nbsp;&nbsp;
+Pxx = psd(X,NFFT,Fs.WINDOW)<br>
+
+&nbsp;&nbsp;&nbsp; [Pxx,F] = psd(X,NFFT,Fs,WINDOW,NOVERLAP)<br>
+
+&nbsp;&nbsp;&nbsp; [Pxx,Pxxc,F] =
+psd(X,NFFT,Fs,WINDOW,NOVERLAP,P) </font><br>
+
+<br>
+
+<b><big><font color="#990000">Description</font></big></b><br>
+
+&nbsp;<br>
+
+PSD estimates the Power Spectral Density of a discrete-time signal
+vector X<br>
+
+using Welch's averaged, modified periodogram method.<br>
+
+&nbsp;<br>
+
+X is divided into overlapping sections, each of which is detrended<br>
+
+(according to the detrending flag, if specified), then windowed by<br>
+
+the WINDOW parameter, then zero-padded to length NFFT.&nbsp; The
+magnitude<br>
+
+squared of the length NFFT DFTs of the sections are averaged to form<br>
+
+Pxx.&nbsp; Pxx is length NFFT/2+1 for NFFT even, (NFFT+1)/2 for
+NFFT odd,<br>
+
+or NFFT if the signal X is complex.&nbsp; If you specify a scalar
+for<br>
+
+WINDOW, a Hanning window of that length is used.&nbsp; Fs is the
+sampling<br>
+
+frequency which doesn't affect the spectrum estimate but is used<br>
+
+for scaling the X-axis of the plots.<br>
+
+&nbsp;<br>
+
+<font face="Courier New">[Pxx,F] =
+psd(X,NFFT,Fs,WINDOW,NOVERLAP)</font>, returns a vector of
+frequen-<br>
+
+cies the same size as Pxx at which the psd is estimated, and overlaps<br>
+
+the sections of X by NOVERLAP samples.<br>
+
+&nbsp;<br>
+
+<font face="Courier New">[Pxx, Pxxc, F] =
+psd(X,NFFT,Fs,WINDOW,NOVERLAP,P)</font>, where P is a<br>
+
+scalar between 0 and 1, returns the P*100% confidence interval for Pxx.<br>
+
+&nbsp;<br>
+
+<font face="Courier New">psd(X,...,DFLAG)</font>,
+where DFLAG can be 'linear', 'mean' or 'none',<br>
+
+specifies a detrending mode for the prewindowed sections of X.<br>
+
+DFLAG can take the place of any parameter in the parameter list<br>
+
+(besides X) as long as it is last, e.g. <font face="Courier New">psd(X,'mean')</font>;<br>
+
+&nbsp; <br>
+
+<font face="Courier New">psd</font> with no output
+arguments plots the psd in the current figure window,<br>
+
+with confidence intervals if you provide the P parameter.<br>
+
+&nbsp;<br>
+
+The default values for the parameters are <font face="Courier New">NFFT
+= 256</font> (or <font face="Courier New">LENGTH(X)</font>,<br>
+
+whichever is smaller), <font face="Courier New">NOVERLAP
+= 0</font>, <font face="Courier New">WINDOW =
+HANNING(NFFT)</font>, <font face="Courier New">Fs =
+2</font>,<br>
+
+<font face="Courier New">P = .95</font>, and <font face="Courier New">DFLAG = 'none'</font>.&nbsp;
+You can obtain a default parameter by<br>
+
+leaving it off or inserting an empty matrix <font face="Courier New">[]</font>,
+e.g. <font face="Courier New">psd(X,[],10000)</font>.<br>
+
+&nbsp;<br>
+
+NOTE: For Welch's method implementation which scales by the sampling<br>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;frequency, 1/Fs, see PWELCH. <br>
+
+<br>
+
+<b><big><font color="#990000">See also </font></big></b></font><br>
+
+<br>
+
+<span style="font-family: Arial;">&nbsp;
+&nbsp; <a href="file:///C:/MATLAB6p5/help/toolbox/signal/pwelch.html">pwelch</a>,
+<a href="file:///C:/MATLAB6p5/help/toolbox/signal/csd.html">csd</a>,
+<a href="file:///C:/MATLAB6p5/help/toolbox/signal/cohere.html">cohere</a>,
+<a href="file:///C:/MATLAB6p5/help/toolbox/signal/tfe.html">tfe</a><br>
+
+</span>&nbsp;<br>
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+<table class="MsoNormalTable" style="background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" border="0" cellpadding="0" cellspacing="0" height="22" width="1374">
+
+  <tbody>
+
+    <tr style="">
+
+      <td style="padding: 0cm; width: 15pt;" valign="top" width="20"> <span style="font-size: 10pt; font-family: Arial;"><a href="validadeytempo.html"><span style="text-decoration: none;"><span style=""></span></span></a><o:p></o:p></span></td>
+
+      <td style="padding: 0cm;" valign="top"> <span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></td>
+
+      <td style="padding: 0cm;" align="right" valign="top"> </td>
+
+      <td style="padding: 0cm; width: 15pt;" align="right" valign="top" width="20"> <span style="font-size: 10pt; font-family: Arial; color: blue;"><a href="criarparam.html"><span style="text-decoration: none;"><span style=""></span></span></a></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+</html>

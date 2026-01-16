@@ -1,0 +1,6183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <title>Obtenção de Dados dos Pontos de Ensaio</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+<div class="Section1">
+<table class="MsoNormalTable" style="width: 100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" valign="top"> <span class="GramE"><b><span style="font-family: Arial;">Menu</span></b></span><b><span style="font-family: Arial;"> Ferramentas</span></b><span style="font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+
+
+
+
+
+      <td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" align="right" valign="top"> <span style="font-size: 10pt; font-family: Arial;"><a href="visualizacaoajustes.html"><span style="text-decoration: none;"><span style=""><img alt="" src="imagens/image001.gif" v:shapes="_x0000_i1025" align="top" border="0" height="17" width="17"></span></span></a></span><span style="font-family: Arial;">&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Arial;"><a href="gerenceventos.html"><span style="text-decoration: none;"><span style=""><img alt="" src="imagens/image002.gif" v:shapes="_x0000_i1026" align="top" border="0" height="17" width="17"></span></span></a></span><span style="font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 16pt; font-family: Arial; color: rgb(153, 0, 0);"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+
+
+
+
+
+<b><span style="font-size: 14pt; font-family: Arial; color: rgb(153, 0, 0);">Obtenção
+de Dados dos Pontos de Ensaio</span></b><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Após cadastrar
+os pontos de ensaio
+e definir os dados de interesse, os ajustes de curva e os valores de
+validação
+na </span><span style="font-size: 10pt; font-family: Arial;"><a href="editorpontosdeens.html">ferramenta
+de edição de <span style="">pontos de ensaio</span></a><span style="">, é
+possível compilar os dados resultantes em planilhas, permitindo ao
+usuário <span class="GramE">agilizar</span> os
+procedimentos de análise e redução de dados.<o:p></o:p></span></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O R_DAT dispõe
+de três ferramentas
+de obtenção de dados dos pontos de ensaio:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<ul style="margin-top: 0cm;" type="disc">
+
+
+
+
+
+
+
+
+  <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Arial;"><a href="obtencaodedados.html#comp">Obter
+compilação de dados</a><o:p></o:p></span></li>
+
+
+
+
+
+
+
+
+  <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Arial;"><a href="obtencaodedados.html#aj">Obter
+dados de ajustes de
+curva</a><o:p></o:p></span></li>
+
+
+
+
+
+
+
+
+  <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Arial;"><a href="obtencaodedados.html#tab">Obter
+tabela de dados</a><o:p></o:p></span></li>
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span><b><span style="font-family: Arial; color: rgb(153, 0, 0);"><a name="comp"></a></span></b></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-family: Arial; color: rgb(153, 0, 0);">Obter
+Compilação de Dados dos Pontos de Ensaio</span></b><span style="font-family: Arial;"><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Essa ferramenta
+permite obter a
+compilação dos dados gerais e os dados de interesse de um grupo de
+pontos de
+ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Clique em
+&#8220;Ferramentas </span><span style="font-size: 10pt; font-family: Arial;">&#9658;<span style=""> Gerenciamento de pontos de <span class="GramE">ensaio
+...</span> </span>&#9658;
+Obter compilação de dados<span style="">&#8221; ou no
+botão&nbsp;<img style="border: 0px solid ; width: 22px; height: 22px;" alt="" src="imagens/image179.png" v:shapes="_x0000_i1027" height="22" width="22"><span style="">&nbsp;</span>na
+Barra de Ferramentas.<o:p></o:p></span></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Caso haja mais
+de um grupo de pontos cadastrados, o usuário
+deverá indicar o grupo desejado:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 162px; height: 123px;" alt="" src="imagens/image241.png" v:shapes="_x0000_i1062" height="123" width="162"><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Os dados gerais
+dos pontos de ensaio são:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" valign="top" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Dado Geral<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" valign="top" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Texto com a
+descrição do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Tempo Inicial<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Tempo inicial
+do ponto de ensaio no formato <span class="GramE">HH:</span>MM:SS.MS.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Tempo Inicial<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Tempo final do
+ponto de ensaio no formato <span class="GramE">HH:</span>MM:SS.MS.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Duração<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Duração do
+ponto de ensaio no formato <span class="GramE">HH:</span>MM:SS.MS.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">No. observações<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Número de
+linhas da matriz DADOS contidas no ponto de ensaio (tamanho da amostra).<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Validade (%)<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Porcentagem
+geral de observações dentro das tolerâncias, considerando todos os
+parâmetros relevantes que apresentam tolerâncias cadastradas.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Os dados de
+interesse dos pontos de ensaio, relativos aos
+parâmetros desejados, são:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" valign="top" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Dado de
+Interesse<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" valign="top" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Média<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor médio do
+parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Desvio padrão<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Desvio padrão
+do parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Mínimo<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor mínimo do
+parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Máximo<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor máximo do
+parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Amplitude<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Diferença entre
+os valores máximo e mínimo do parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor Inicial<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor da
+primeira observação do parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor Final<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor da última
+observação do parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Variação<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Diferença entre
+os valores da última e da <span class="GramE">primeira
+observações</span> do parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Validade (%)<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Porcentagem de
+observações do parâmetro dentro das tolerâncias cadastradas, no
+intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Constante de
+tempo<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Constante de
+tempo de um ajuste de resposta de 1ª ordem do parâmetro no intervalo do
+ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Amortecimento<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Amortecimento
+de um ajuste de resposta de 2ª ordem do parâmetro no intervalo do ponto
+de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Frequência
+natural<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Frequência
+natural de um ajuste de resposta de 2ª ordem do parâmetro no intervalo
+do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Derivada média</span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Coeficiente
+angular de um ajuste de 1º grau do parâmetro no intervalo do ponto de
+ensaio.</span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Os dados
+selecionados são obtidos para todos os pontos de
+ensaio do grupo selecionado e apresentados em uma planilha Excel.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">As primeiras
+colunas apresentam os dados gerais da seguinte
+forma:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Primeira coluna:
+Numeração dos pontos de ensaio do grupo selecionado (sempre
+apresentada);<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Segunda coluna:
+Descrição dos pontos de ensaio (opcional);<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Demais colunas:
+Dados gerais selecionados pelo usuário (opcionais);<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Primeira linha:
+Nomes dos dados gerais;<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Segunda linha:
+Unidades dos dados gerais.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">As demais
+colunas apresentam os dados de interesse da
+seguinte forma:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Demais colunas:
+Dados de interesse dos parâmetros selecionados pelo usuário;<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Primeira linha:
+Nomes e unidades dos parâmetros desejados;<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Segunda linha:
+Tipo dos dados de interesse. <o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Exemplo:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 770px; height: 148px;" alt="" src="imagens/image242.jpg" v:shapes="_x0000_i1028" height="148" width="770"><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O usuário pode
+usar a planilha apresentada como pasta de
+trabalho ou como fonte de dados para programas de redução de dados.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; background: rgb(255, 204, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid gray; padding: 0cm 5.4pt; width: 476.6pt;" valign="top" width="635">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 10pt; font-family: Arial;">Nota</span></b><span style="font-size: 10pt; font-family: Arial;">:</span><span style="font-size: 10pt; font-family: Arial;"> O programa MS
+Excel é limitado a 65.536 linhas e 256 colunas por planilha. Caso o
+número de pontos (mais duas linhas de cabeçalho) ou o número de colunas
+seja superior ao limite do Excel, a compilação não será possível.<span style=""><o:p></o:p></span></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span><b><span style="font-family: Arial; color: rgb(153, 0, 0);"><a name="aj"></a></span></b></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-family: Arial; color: rgb(153, 0, 0);">Obtenção
+de Dados dos Ajustes de Curvas dos
+Pontos de Ensaio</span></b><span style="font-family: Arial;"><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Essa ferramenta
+permite obter os
+dados dos ajustes de curva de um grupo de pontos de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Clique em
+&#8220;Ferramentas </span><span style="font-size: 10pt; font-family: Arial;">&#9658;<span style=""> Gerenciamento de pontos de <span class="GramE">ensaio
+...</span> </span>&#9658;
+Obter dados dos ajustes de curva<span style="">&#8221; ou no
+botão&nbsp;<img style="border: 0px solid ; width: 22px; height: 22px;" alt="" src="imagens/image180.png" v:shapes="_x0000_i1029" height="22" width="22"><span style="">&nbsp;</span>na
+Barra de Ferramentas.<o:p></o:p></span></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Caso haja mais
+de um grupo de pontos cadastrados, o usuário
+deverá indicar o grupo desejado:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 162px; height: 123px;" alt="" src="imagens/image241.png" v:shapes="_x0000_i1062" height="123" width="162"></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Os dados dos
+ajustes dos pontos de ensaio são:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 141.7pt;" valign="top" width="189">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Dado<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" valign="top" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Observação<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 141.7pt;" width="189">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Coeficientes de
+ajuste polinomial<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Coeficientes
+dos polinômios de ajuste, do termo de maior grau para o de menor grau.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 141.7pt;" width="189">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Coeficientes da
+curva de resposta dinâmica<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Coeficientes
+das curvas de ajuste de resposta dinâmica de 1ª ou 2ª ordem, conforme <a href="../Menu_Funcoes/ajustedecurva.html#logic">função
+de
+ajuste de curva</a>.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 141.7pt;" width="189">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><i style=""><span style="font-size: 10pt; font-family: Arial;">Offset</span></i><span style="font-size: 10pt; font-family: Arial;"> da abscissa<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor inicial
+da abscissa, subtraído para evitar erros numéricos quando os valores da
+abscissa são elevados.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 141.7pt;" width="189">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Graus de
+liberdade<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Diferença entre
+o número de pontos da amostra e o número de coeficientes da equação
+ajustada.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 141.7pt;" width="189">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Norma dos
+resíduos<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Representa uma
+medida da aderência do ajuste, onde valores menores indicam ajustes
+melhores.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 141.7pt;" width="189">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;" lang="EN-US">SSE<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;" lang="EN-US">&#8220;Sum
+of squares due to error&#8221;<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Mede o desvio
+da resposta com relação aos valores ajustados. Um valor próximo de zero
+indica um melhor ajuste.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 141.7pt;" width="189">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;" lang="EN-US">Erro
+RMS<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;" lang="EN-US">&#8220;Root
+mean squared error&#8221;<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Fornece a média
+quadrática dos erros. Um valor próximo de zero indica um melhor ajuste.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 141.7pt;" width="189">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;" lang="EN-US">Desvio
+padrão</span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Fornece o
+desvio padrão dos erros. Um valor próximo de zero indica um melhor
+ajuste.</span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 141.7pt;" width="189">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;" lang="EN-US">R²
+      <span class="SpellE">ajustado</span><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Coeficiente de
+múltipla determinação ajustado pelos graus de liberdade. Representa uma
+medida normalizada da qualidade do ajuste, variando de <st1:metricconverter productid="0 a" w:st="on">0 a</st1:metricconverter>
+      <span class="GramE">1</span>. Quanto mais
+próximo de 1, melhor o ajuste.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Para mais
+informações sobre as estatísticas do ajuste,
+clique <a href="file:///C:/MATLAB6p5/help/toolbox/curvefit/ch_fitt9.html">aqui</a>.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Os dados de
+ajustes de curva são obtidos para todos os
+pontos de ensaio do grupo selecionado e apresentados em uma planilha
+Excel da
+seguinte forma.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Primeira coluna:
+Numeração dos pontos de ensaio do grupo selecionado;<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Demais colunas:
+Coeficientes das curvas ajustadas, <i style="">offset</i>
+da abscissa e dados estatísticos desejados;<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Primeira linha:
+Nomes, unidades dos parâmetros desejados e tipo de ajuste;<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Segunda linha:
+Nomenclatura dos coeficientes das curvas e dos dados desejados.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Exemplos:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp; <img style="border: 0px solid ; width: 714px; height: 103px;" alt="" src="imagens/image207.png" v:shapes="_x0000_i1030" height="103" width="714"><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp; <img style="border: 0px solid ; width: 714px; height: 103px;" alt="" src="imagens/image245.png" v:shapes="_x0000_i1031" height="103" width="714"><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O usuário pode
+usar a planilha apresentada como pasta de
+trabalho ou como fonte de dados para programas de redução de dados.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; background: rgb(255, 204, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid gray; padding: 0cm 5.4pt; width: 476.6pt;" valign="top" width="635">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 10pt; font-family: Arial;">Nota</span></b><span style="font-size: 10pt; font-family: Arial;">:</span><span style="font-size: 10pt; font-family: Arial;"> O programa MS
+Excel é limitado a 65.536 linhas e 256 colunas por planilha. Caso o
+número de pontos (mais duas linhas de cabeçalho) ou o número de colunas
+seja superior ao limite do Excel, a obtenção dos dados dos ajustes não
+será possível.<span style=""><o:p></o:p></span></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span><b><span style="font-family: Arial; color: rgb(153, 0, 0);"><a name="tab"></a></span></b></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-family: Arial; color: rgb(153, 0, 0);">Obtenção
+de Tabela de Dados dos&nbsp;Pontos de Ensaio</span></b><span style="font-family: Arial;"><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Essa ferramenta
+permite obter uma
+tabela de dados dos pontos de ensaio, para todos ou parte dos
+parâmetros. O tipo
+de dado
+pode ser escolhido pelo usuário.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Clique em
+&#8220;Ferramentas </span><span style="font-size: 10pt; font-family: Arial;">&#9658;<span style=""> Gerenciamento de pontos de <span class="GramE">ensaio
+...</span> </span>&#9658;
+Obter tabela de dados<span style="">&#8221; ou no botão&nbsp;<img style="border: 0px solid ; width: 22px; height: 22px;" alt="" src="imagens/image181.png" v:shapes="_x0000_i1032" height="22" width="22"><span style="">&nbsp;</span>na
+Barra de Ferramentas.<o:p></o:p></span></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ;" alt="" src="imagens/image247.png" v:shapes="_x0000_i1066" height="397" width="241"><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">No campo &#8220;Dado
+desejado&#8221;, selecione o tipo de dado que
+deseja obter. Os dados disponíveis são:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" valign="top" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Dado de
+Interesse<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" valign="top" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Média<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor médio do
+parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Desvio padrão<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Desvio padrão
+do parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor mínimo<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor mínimo do
+parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor máximo<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor máximo do
+parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Amplitude<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Diferença entre
+os valores máximo e mínimo do parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor Inicial<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor da
+primeira observação do parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor Final<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valor da última
+observação do parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Variação<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Diferença entre
+os valores da última e da <span class="GramE">primeira
+observações</span> do parâmetro no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Número de <span class="SpellE"><span class="GramE">NaNs</span></span><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Número de
+observações inválidas (&#8220;<span class="SpellE"><span class="GramE">NaN</span></span>&#8221;) do parâmetro
+no intervalo do ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 96.7pt;" width="129">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Derivada média<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Coeficiente
+angular de um ajuste de 1º grau do parâmetro no intervalo do ponto de
+ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; background: rgb(255, 204, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid gray; padding: 0cm 5.4pt; width: 476.6pt;" valign="top" width="635">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 10pt; font-family: Arial;">Nota</span></b><span style="font-size: 10pt; font-family: Arial;">:</span><span style="font-size: 10pt; font-family: Arial;"> As unidades
+dos dados &#8220;Número de <span class="SpellE"><span class="GramE">NaNs</span></span>&#8221; (adimensional)
+e &#8220;Derivada média&#8221; (<span style="">×</span> 1/s) não
+são as mesmas dos parâmetros originais, porém os nomes das unidades
+originais não serão alterados.<span style=""><o:p></o:p></span></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">No campo
+&#8220;Grupo&#8221;, selecione o grupo de pontos de ensaio para
+o qual deseja obter os dados. A opção &#8220;Todos&#8221; inclui todos os grupos.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">No campo
+&#8220;Formato&#8221;, selecione o formato do arquivo que
+deseja criar. As opções são:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 114.7pt;" valign="top" width="153">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Formato<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" valign="top" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 114.7pt;" valign="top" width="153">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Planilha Excel <span class="GramE">(.</span><span class="SpellE">xls</span>)<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" valign="top" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Planilha do
+Microsoft Excel.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 114.7pt;" valign="top" width="153">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Arquivo de
+texto <span class="GramE">(.</span><span class="SpellE">txt</span>)<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" valign="top" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Arquivo de
+texto ASCII com cabeçalho.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 114.7pt;" valign="top" width="153">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Arquivo de
+texto <span class="GramE">(.</span><span class="SpellE">dat</span>)<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" valign="top" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Arquivo de
+texto ASCII apenas com valores numéricos.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 114.7pt;" valign="top" width="153">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Arquivo MATLAB <span class="GramE">(.</span><span class="SpellE">mat</span>)<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 333pt;" valign="top" width="444">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Arquivo de
+dados do MATLAB.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Caso o formato
+selecionado seja &#8220;Arquivo de texto&#8221;, indique
+o caractere delimitador e o número de algarismos significativos nos
+campos
+&#8220;Delimitador&#8221; e &#8220;Precisão&#8221;. As opções são:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 78.7pt;" valign="top" width="105">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Delimitador<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 207pt;" width="276">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Espaço,
+Tabulação, Vírgula, <span class="GramE">Ponto-e-vírgula</span><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 78.7pt;" valign="top" width="105">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Precisão</span></b><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 207pt;" width="276">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Zero a 16
+algarismos<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; background: rgb(255, 204, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid gray; padding: 0cm 5.4pt; width: 476.6pt;" valign="top" width="635">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 10pt; font-family: Arial;">Nota</span></b><span style="font-size: 10pt; font-family: Arial;">:</span><span style="font-size: 10pt; font-family: Arial;"> Caso existam,
+nos nomes de parâmetros, unidades, grupos ou descrições, ocorrências do
+caractere delimitador escolhido, os mesmos serão convertidos em
+sublinhado (&#8220;_&#8221;) para evitar que sejam confundidos com os delimitadores.<span style=""><o:p></o:p></span></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>Clique
+no botão <img style="width: 22px; height: 22px;" alt="" src="imagens/image003.png" height="22" width="22">&nbsp;para
+selecionar os parâmetros que deseja incluir na tabela de dados. A
+seleção é feita da mesma forma que na ferramenta <a href="seletordeparam.html">Seletor
+de parâmetros</a>. O
+número de parâmetros selecionados é apresentado à direita do botão.</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+<span style="font-size: 10pt; font-family: Arial;">No campo
+&#8220;Incluir&#8221;, informe as colunas auxiliares que deseja
+incluir e o tipo de cabeçalho. As opções são:<o:p></o:p></span>
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 114.7pt;" valign="top" width="153">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Opção<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 360pt;" valign="top" width="480">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></b></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 114.7pt;" width="153">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Grupo<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 360pt;" width="480">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Inclui uma
+coluna com o grupo a que pertence o ponto de ensaio.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 114.7pt;" width="153">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Número dos
+pontos<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 360pt;" width="480">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Inclui uma
+coluna com o número dos pontos.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 114.7pt;" width="153">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Descrição dos
+pontos<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 360pt;" width="480">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Inclui uma
+coluna com a descrição dos pontos.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 114.7pt;" width="153">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Cabeçalho<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 360pt;" width="480">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Inclui uma
+linha de cabeçalho com os nomes dos parâmetros e uma linhas com as
+unidades. <o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; background: rgb(255, 204, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid gray; padding: 0cm 5.4pt; width: 476.6pt;" valign="top" width="635">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 10pt; font-family: Arial;">Nota</span></b><span style="font-size: 10pt; font-family: Arial;">:</span><span style="font-size: 10pt; font-family: Arial;"> Alguns
+formatos não permitem a inclusão de certos dados. Nesses casos, os
+campos ficarão desabilitados.<span style=""><o:p></o:p></span></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ao clicar &#8220;OK&#8221;,
+os dados selecionados são obtidos para todos
+os pontos de ensaio e apresentados no formato escolhido.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Exemplos:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Médias <st1:personname productid="em formato Excel" w:st="on">em formato
+Excel</st1:personname> com grupo, numeração, descrição e
+cabeçalho:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp; <img style="border: 0px solid ; width: 534px; height: 124px;" alt="" src="imagens/image248.png" v:shapes="_x0000_i1082" height="124" width="534"><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; background: rgb(255, 204, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="border: 1pt solid gray; padding: 0cm 5.4pt; width: 476.6pt;" valign="top" width="635">
+      
+      
+      
+      
+      
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 10pt; font-family: Arial;">Nota</span></b><span style="font-size: 10pt; font-family: Arial;">:</span><span style="font-size: 10pt; font-family: Arial;"> O programa MS
+Excel é limitado a 65.536 linhas e 256 colunas por planilha. Caso o
+número de pontos (mais as linhas de cabeçalho) ou o número de colunas
+seja superior ao limite do Excel, a obtenção de dados nesse formato não
+será possível.<span style=""><o:p></o:p></span></span></p>
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Médias em
+formato texto <span class="GramE">(.</span><span class="SpellE">txt</span>) com numeração, delimitador
+&#8220;espaço&#8221;, 6 algarismos significativos
+e cabeçalho:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp; <img style="border: 0px solid ; width: 673px; height: 136px;" alt="" src="imagens/image249.png" v:shapes="_x0000_i1080" height="136" width="673"><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Desvios padrão
+em formato texto numérico <span class="GramE">(.</span><span class="SpellE">dat</span>) com delimitador
+&#8220;ponto-e-vírgula&#8221; e 6 algarismos
+significativos:<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp; <img style="border: 0px solid ; width: 656px; height: 70px;" alt="" src="imagens/image250.png" v:shapes="_x0000_i1084" height="70" width="656"><o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O arquivo de
+dados do MATLAB <span class="GramE">(.</span><span class="SpellE">mat</span>) é salvo seguindo o <a href="../Menu_Arquivo/carregarmat.html#padrao">padrão
+de armazenamento de
+dados adotado pelo IPEV</a>, ou seja, uma matriz numérica &#8220;DADOS&#8221;
+contendo os
+dados obtidos e uma matriz de texto &#8220;PARAM&#8221; com os nomes dos
+parâmetros. É
+possível abrir esse arquivo normalmente no <span class="GramE">R_DAT</span>.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O usuário pode
+usar o arquivo apresentado como arquivo de
+trabalho ou como fonte de dados para programas de redução de dados.<o:p></o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+<table class="MsoNormalTable" style="background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+      <td style="padding: 0cm; width: 15pt;" valign="top" width="20"> <span style="font-size: 10pt; font-family: Arial;"><a href="visualizacaoajustes.html"><span style="text-decoration: none;"><span style=""><img src="imagens/image001.gif" v:shapes="_x0000_i1038" align="bottom" border="0" height="17" width="17"></span></span></a><o:p></o:p></span>
+      </td>
+
+
+
+
+
+
+
+
+      <td style="padding: 0cm;" valign="top"> <span style="font-size: 10pt; font-family: Arial;">&nbsp;Visualização
+dos ajustes de curva<o:p></o:p></span> </td>
+
+
+
+
+
+
+
+
+      <td style="padding: 0cm;" align="right" valign="top"> <span style="font-size: 10pt; font-family: Arial;">Gerenciamento
+de eventos&nbsp;<o:p></o:p></span> </td>
+
+
+
+
+
+
+
+
+      <td style="padding: 0cm; width: 15pt;" align="right" valign="top" width="20"> <span style="font-size: 10pt; font-family: Arial;"><a href="gerenceventos.html"><span style="text-decoration: none;"><span style=""><img src="imagens/image002.gif" v:shapes="_x0000_i1039" align="bottom" border="0" height="17" width="17"></span></span></a><o:p></o:p></span>
+      </td>
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

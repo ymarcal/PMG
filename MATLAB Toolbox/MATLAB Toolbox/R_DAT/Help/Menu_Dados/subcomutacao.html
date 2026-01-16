@@ -1,0 +1,736 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+
+
+  
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+
+  
+  
+  <title>Análise de Subcomutação</title>
+</head>
+
+
+<body>
+
+
+
+<div class="Section1">
+<table class="MsoNormalTable" style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+
+
+
+  <tbody>
+
+
+
+    <tr style="">
+
+
+
+      <td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;"> <span class="GramE"><b><span style="font-family: Arial;">Menu</span></b></span><b><span style="font-family: Arial;"> Dados</span></b><span style="font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+      <td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" align="right"> <a href="analiseespectral.html#sptool"><span style="font-size: 10pt; font-family: Arial;"><span style="text-decoration: none;"><span style=""><img style="border: 0px solid ; width: 17px; height: 17px;" alt="" src="imagens/image001.gif" v:shapes="_x0000_i1025"></span></span></span></a><span style="font-family: Arial;">&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Arial; color: blue;"><a href="criarparam.html"><span style="text-decoration: none;"><span style=""><img style="border: 0px solid ; width: 17px; height: 17px;" alt="" src="imagens/image002.gif" v:shapes="_x0000_i1026"></span></span></a></span><span style="font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 14pt; font-family: Arial; color: rgb(153, 0, 0);"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 14pt; font-family: Arial; color: rgb(153, 0, 0);">Análise
+de Subcomutação<o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Em sistemas de
+gravação de dados digitais, é comum que parâmetros de dinâmica mais
+lenta sejam amostrados com uma cadência menor que a normal, enquanto
+parâmetros de alta dinâmica sejam amostrados com cadência maior. Dessa
+forma, a cada "frame" de gravação de dados, é possível
+ter&nbsp;parâmetros registrados mais de uma vez, enquanto outros só
+são gravados em alguns frames.</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">A amostragem e
+gravação de um parâmetro com uma taxa maior que a cadência normal dos
+"frames" é chamada "supercomutação", enquanto que o inverso é chamado
+"subcomutação".</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Como o R_DAT
+trabalha com uma matriz de dados retangular, em que cada linha
+representa um&nbsp;momento no tempo (observação), todos os parâmetros têm que
+ter a mesma cadência. Por isso, parâmetros supercomutados têm seus
+registros extras desconsiderados</span><span style="font-size: 10pt; font-family: Arial;"></span><span style="font-size: 10pt; font-family: Arial;"> e parâmetros
+subcomutados&nbsp;são intercalados&nbsp;com o valor "NaN"
+("not-a-number", que representa um dado não&nbsp;válido), pois não
+é possível ter espaços vazios na matriz de dados.</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">No exemplo
+abaixo, </span><span style="font-size: 10pt; font-family: Arial;">a cadência
+normal de frames é de&nbsp;20 Hz, como pode ser visto pelo&nbsp;parâmetro "Tempo"</span><span style="font-size: 10pt; font-family: Arial;">. Contudo,&nbsp;o
+parâmetro "TETA" só apresenta valores válidos</span><span style="font-size: 10pt; font-family: Arial;"></span><span style="font-size: 10pt; font-family: Arial;">
+uma vez a cada dois frames e o parâmetro "FI" uma
+vez a
+cada quatro frames. Isso significa que o parâmetro TETA foi amostrado com
+cadência de 10 Hz e o parâmetro FI com cadência de 5 Hz.</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;"><img style="width: 486px; height: 285px;" alt="" src="imagens/image072.PNG"><span style="font-size: 10pt; font-family: Arial;"></span></p>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Trabalhar com
+dados subcomutados no R_DAT não é recomendado, pois os valores
+inválidos podem afetar algumas operações, além de prejudicarem a
+visualização dos parâmetros nos gráficos. Esse problema pode ser
+solucionado de duas formas:&nbsp;</span></p>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;&nbsp;-
+Interpolando os dados inválidos de cada parâmetro; ou</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp; -
+Eliminando os dados inválidos de um determinado parâmetro, reduzindo a
+cadência de toda a matriz para a cadência do parâmetro desejado.</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"></span> &nbsp;</p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">A função
+"Análise de subcomutação" permite que o usuário analise os parâmetros e
+aplique a&nbsp;solução mais adequada.</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Clique no <span class="GramE">menu</span> &#8220;Dados &#9658; Análise de dados
+... &#9658;&nbsp;</span><span style="font-size: 10pt; font-family: Arial;">Análise de
+subcomutação</span><span style="font-size: 10pt; font-family: Arial;">&#8221;.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Será
+apresentada uma janela com a análise dos parâmetros e a representação
+gráfica da subcomutação:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 756px; height: 467px;" alt="" src="imagens/image038.png" v:shapes="_x0000_i1027"><o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>A
+função buscará automaticamente os parâmetros que estiverem subcomutados
+e apresentará a análise de seguinte forma:</o:p></span></p>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span>&nbsp;<span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+
+<span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+<p style="margin: 0cm 0cm 0.0001pt; font-weight: bold;"><span style="font-size: 10pt; font-family: Arial;"><o:p>Coluna
+"Não comutados"</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Nessa coluna
+são listados os parâmetros normais, ou seja, sem subcomutação. O
+usuário não pode alterar essa coluna.</span></p>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;&nbsp;&nbsp;</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; font-weight: bold;"><span style="font-size: 10pt; font-family: Arial;"><o:p>Coluna
+"Subcomutados"</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Nessa coluna </span><span style="font-size: 10pt; font-family: Arial;">são listados os
+parâmetros subcomutados, seguidos da taxa de subcomutação. A indicação
+"1:X" significa uma leitura válida a cada X linhas</span><span style="font-size: 10pt; font-family: Arial;">. A máxima taxa reconhecida é 1:64.</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O usuário deve
+selecionar com o mouse e os botões "Ctrl" e "Shift" os parâmetos que
+deseja interpolar, ou o parâmetro de referência para redução de
+cadência, dependendo da opção escolhida.</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Para selecionar
+todos os parâmetros subcomutados, clique no botão "Selecionar todos".
+Para selecionar por taxa de subcomutação, clique no botão "Filtrar ..."
+e escolha a taxa desejada.</span></p>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;&nbsp;</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; font-weight: bold;"><span style="font-size: 10pt; font-family: Arial;">Grade de
+representação gráfica</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"></span><span style="font-size: 10pt; font-family: Arial;">Na
+grade à
+direita será apresentada uma representação gráfica da subcomutação.
+Cada coluna representa um parâmetro e cada linha representa uma
+observação. Use as barras de rolagem para percorrer todos os dados.</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O código de
+cores é o seguinte:</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp; -
+Quadrado azul: valor válido;</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp; -
+Quadrado branco: valor inválido ("NaN"); e&nbsp;</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp; -
+Quadrado vermelho: parâmetro selecionado.</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ao passar o
+cursor sobre a grade, será apresentado o nome do parâmetro
+correspondente.</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Para selecionar
+um parâmetro, clique sobre sua coluna na grade com o botão esquerdo do
+mouse. Para desselecioná-lo, clique com o botão direito do mouse.</span></p>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;&nbsp;</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; font-weight: bold;"><span style="font-size: 10pt; font-family: Arial;">Opções de
+correção</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">No campo
+"Opção", selecione a correção desejada. As opções são:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse; width: 503.533px;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+  <tbody>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 78px;" valign="top">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Opção<o:p></o:p></span></b></p>
+
+
+
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 392px;" valign="top">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></b></p>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 78px;">
+      <span class="SpellE"><span class="GramE"><span style="font-size: 10pt; font-family: Arial;">Interpolar</span></span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 392px;">
+      <span style="font-size: 10pt; font-family: Arial;">Interpola
+os dados inválidos dos parâmetros selecionados, de acordo com o método
+desejado.</span><small><span style="font-family: Arial;"></span></small>
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 78px;">
+      <span class="SpellE"><span style="font-size: 10pt; font-family: Arial;">Excluir</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 392px;">
+      <span style="font-size: 10pt; font-family: Arial;">Exclui
+os pontos inválidos do parâmetro selecionado, reduzindo a cadência de
+toda a matriz.<o:p></o:p></span> </td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<table class="MsoTableGrid" style="border: medium none ; background: rgb(255, 204, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+  <tbody>
+
+
+
+
+    <tr style="">
+
+
+
+
+      <td style="border: 1pt solid gray; padding: 0cm 5.4pt; width: 467.6pt;" valign="top" width="623"> <b><span style="font-size: 10pt; font-family: Arial;">Nota</span></b><span style="font-size: 10pt; font-family: Arial;">:
+Ao escolher a opção "Excluir", certifique-se que os valores válidos dos
+demais parâmetros estejam nas mesmas linhas que os do&nbsp;parâmetro de
+referência. Subcomutações "descasadas" não podem ser corrigidas por
+esse método.<o:p></o:p></span>
+      </td>
+
+
+
+
+    </tr>
+
+
+
+
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ao selecionar
+"Interpolar", é necessário informar o método de interpolação. As opções
+são:</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>&nbsp;</p>
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse; width: 503.533px;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+  <tbody>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 78px;" valign="top">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Opção<o:p></o:p></span></b></p>
+
+
+
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 392px;" valign="top">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></b></p>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 78px;">
+      <span class="SpellE"><span class="GramE"><span style="font-size: 10pt; font-family: Arial;">Linear</span></span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 392px;">
+      <span style="font-size: 10pt; font-family: Arial;">Interpola
+linearmente&nbsp;de acordo com&nbsp;um tempo de referência.</span><small><span style="font-family: Arial;"></span></small> </td>
+
+
+
+    </tr>
+
+
+
+    <tr style="">
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 78px;">
+      <span class="SpellE"><span style="font-size: 10pt; font-family: Arial;">Vizinho</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 392px;">
+      <span style="font-size: 10pt; font-family: Arial;">Atribui
+o valor do ponto válido mais próximo</span><span style="font-size: 10pt; font-family: Arial;"> (anterior ou posterior) de
+acordo com&nbsp;um tempo de referência.</span> </td>
+
+
+    </tr>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 78px;">
+      <span class="SpellE"><span style="font-size: 10pt; font-family: Arial;">Repetir</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 392px;">
+      <span style="font-size: 10pt; font-family: Arial;">Repete&nbsp;o valor válido anterior.</span><span style="font-size: 10pt; font-family: Arial;"></span> </td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Para
+os métodos&nbsp;"Linear" e "Vizinho", é necessário indicar um tempo de
+referência. O mesmo deve ser adequado, ou seja, monotônico crescente e
+sem pontos inválidos ("NaN").</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Para o método "Linear", </span><span style="font-size: 10pt; font-family: Arial;">parâmetros com
+escala cíclica, como ângulos de <span class="SpellE">Euler</span>,
+podem ser incorretamente interpolados entre observações que apresentam
+descontinuidade (por exemplo, proa acima de 360° volta para o início da
+escala). Para evitar esse efeito, o usuário deve indicar
+quais&nbsp;parâmetros possuem essa característica (em graus). </span><span style="font-size: 10pt; font-family: Arial;">De forma semelhante, parâmetros lógicos (como estado de acionamento) ou inteiros<span class="SpellE"> (como TOP)</span>,
+podem ser incorretamente interpolados entre observações que apresentam
+saltos (por exemplo, de 0 a 1 surgiriam valores intermediários).
+Para evitar esse efeito, o usuário deve indicar
+quais&nbsp;parâmetros possuem essa característica. A interface para indicação desses parâmetros é a mesma da função&nbsp;<a href="../Menu_Funcoes/reamostrar.html#ciclica">Reamostrar</a>.</span><span style="font-size: 10pt; font-family: Arial;"></span></p>
+
+
+&nbsp;<br>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;<br>
+
+
+Após selecionar todas as opções, clique "OK" e confirme. A matriz de dados será atualizada conforme as correções efetuadas.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+
+
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; background: rgb(255, 204, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+      <td style="border: 1pt solid gray; padding: 0cm 5.4pt; width: 467.6pt;" valign="top" width="623"> <b><span style="font-size: 10pt; font-family: Arial;">Nota</span></b><span style="font-size: 10pt; font-family: Arial;">: É recomendado
+salvar as matrizes de trabalho antes de realizar a operação, pois as
+alterações são profundas e não é possível desfazê-las.<o:p></o:p></span>
+      </td>
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<table class="MsoNormalTable" style="background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+
+  <tbody>
+
+
+
+    <tr style="">
+
+
+
+      <td style="padding: 0cm; width: 15pt;" valign="top" width="20"> <span style="font-size: 10pt; font-family: Arial;"><a href="analiseespectral.html#sptool"><span style="text-decoration: none;"><span style=""><img style="border: 0px solid ; width: 17px; height: 17px;" alt="" src="imagens/image001.gif" v:shapes="_x0000_i1033"></span></span></a><o:p></o:p></span>
+      </td>
+
+
+      <td style="padding: 0cm;" valign="top"> <span style="font-size: 10pt; font-family: Arial;">&nbsp;MATLAB
+Signal Processing Tool</span> </td>
+
+
+
+
+      <td style="padding: 0cm;" align="right" valign="top"> <span style="font-size: 10pt; font-family: Arial;">Criar novo
+parâmetro&nbsp;<o:p></o:p></span> </td>
+
+
+
+      <td style="padding: 0cm; width: 15pt;" align="right" valign="top" width="20"> <span style="font-size: 10pt; font-family: Arial; color: blue;"><a href="criarparam.html"><span style="text-decoration: none;"><span style=""><img src="imagens/image002.gif" v:shapes="_x0000_i1033" align="bottom" border="0" height="17" width="17"></span></span></a></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+</div>
+
+
+
+</body>
+</html>

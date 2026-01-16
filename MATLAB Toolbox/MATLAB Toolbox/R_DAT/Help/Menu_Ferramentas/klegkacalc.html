@@ -1,0 +1,712 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+  
+  <title>Desempenho em Curva</title>
+</head>
+
+
+<body>
+
+
+<div class="Section1">
+<table class="MsoNormalTable" style="width: 100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+  <tbody>
+
+
+    <tr style="">
+
+
+      <td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" valign="top"> <span class="GramE"><b><span style="font-family: Arial;">Menu</span></b></span><b><span style="font-family: Arial;"> Ferramentas</span></b><span style="font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+      <td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" align="right" valign="top"> <a href="anemocalc.html"><span style="font-size: 10pt; font-family: Arial;"><span style="text-decoration: none;"><span style=""><img style="border: 0px solid ; width: 17px; height: 17px;" alt="" src="imagens/image001.gif" v:shapes="_x0000_i1025" align="top" border="0" height="17" width="17"></span></span></span></a><span style="font-family: Arial;">&nbsp;&nbsp;&nbsp;</span><a href="conversorunidades.html"><span style="font-size: 10pt; font-family: Arial;"><span style="text-decoration: none;"><span style=""><img style="border: 0px solid ; width: 17px; height: 17px;" alt="" src="imagens/image002.gif" v:shapes="_x0000_i1026" align="top" border="0" height="17" width="17"></span></span></span></a><span style="font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+    </tr>
+
+
+  
+  </tbody>
+</table>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 16pt; font-family: Arial; color: rgb(153, 0, 0);"><o:p>&nbsp;</o:p></span></b></p>
+
+
+<b><span style="font-size: 14pt; font-family: Arial; color: rgb(153, 0, 0);">Desempenho
+em Curva<o:p></o:p></span></b>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Essa ferramenta
+permite </span><span style="font-size: 10pt; font-family: Arial;">ao usuário
+calcular todas os parâmetros de desempenho em curva (sustentada ou
+instantânea) em um dado ponto do envelope</span><span style="font-size: 10pt; font-family: Arial;"> de voo. Essa é
+uma ferramenta externa ao R_DAT e os parâmetros calculados não têm
+relação com os dados das matrizes de trabalho.<o:p></o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Para acessar a
+ferramenta,&nbsp;clique em &#8220;</span><span style="font-size: 10pt; font-family: Arial;">Ferramentas </span><span style="font-size: 10pt; font-family: Arial;">&#9658;<span style=""> </span></span><span style="font-size: 10pt; font-family: Arial;">Ferramentas
+externas ... </span><span style="font-size: 10pt; font-family: Arial;"> </span><span style="font-size: 10pt; font-family: Arial;">&#9658;<span style="">&nbsp;</span></span><span style="font-size: 10pt; font-family: Arial;"></span><span style="font-size: 10pt; font-family: Arial;">Desempenho em
+curva</span><span style="font-size: 10pt; font-family: Arial;"><span style="">&#8221;.</span></span><span style="font-size: 10pt; font-family: Arial;"><span style=""><o:p></o:p></span></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 758px; height: 494px;" alt="" src="imagens/image290.PNG" v:shapes="_x0000_i1028" height="494" width="758"><o:p></o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-family: Arial; color: rgb(153, 0, 0);">Descrição
+e </span></b><b><span style="font-family: Arial; color: rgb(153, 0, 0);">Operação</span></b></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">A janela da
+ferramenta possui as seguintes áreas:<o:p></o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style=""></span><b>Diagrama</b><span style="font-weight: bold;"> de Desempenho em Curva:</span></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt; font-family: Arial;"><span style="font-size: 10pt;">Diagrama que apresenta as relações
+cinemáticas de uma aeronave em curva (sustentada ou instantânea), para
+uma dada altitude-pressão e variação de temperatura ISA.<br>
+
+
+Na abscissa é apresentado o número de Mach, na ordenada é apresentada a
+razão de curva (°/s), as retas verdes correspondem a diferentes raios
+de curva (m) e as assíntotas vermelhas a diferentes fatores de carga no
+sistema aerodinâmico (g). Os valores correspondentes às linhas iso-raio
+e iso-Nza são apresentados, respectivamente, na borda superior e na
+borda direita do diagrama.<br>
+
+
+&nbsp;<br>
+
+
+O quadrado azul representa uma condição específica da aeronave, e pode
+ser movimentado com o botão esquerdo do mouse.</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt; font-family: Arial;"><span style="font-size: 10pt;">N</span><small><span style="font-family: Arial;"></span></small><span style="font-size: 10pt; font-family: Arial;"><o:p>o
+canto inferior direito do diagrama há um&nbsp;</o:p></span><span style="font-size: 10pt; font-family: Arial;">símbolo</span>
+que
+indica as restrições
+de movimentação do ponto. Para alterná-lo, clique sobre o mesmo.</p>
+
+
+<span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>Os
+símbolos são:</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;
+&nbsp; " + "&nbsp;movimentação em qualquer direção;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;
+&nbsp;&nbsp;" - "&nbsp;&nbsp;</o:p></span><span style="font-size: 10pt; font-family: Arial;">apenas na </span><span style="font-size: 10pt; font-family: Arial;">direção</span><span style="font-size: 10pt; font-family: Arial;"> da abscissa;</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Arial;"><o:p>" <small>|</small>
+" &nbsp;</o:p></span><span style="font-size: 10pt; font-family: Arial;">apenas </span><span style="font-size: 10pt; font-family: Arial;">na direção</span><span style="font-size: 10pt; font-family: Arial;"> da ordenada;</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; " \ " &nbsp;movimentação sobre uma linha iso-Nza;</span></p>
+
+
+<span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; " / "</span><span style="font-size: 10pt; font-family: Arial;"> &nbsp;</span><span style="font-size: 10pt; font-family: Arial;">movimentação
+sobre uma linha</span><span style="font-size: 10pt; font-family: Arial;"></span><span style="font-size: 10pt; font-family: Arial;"> iso-raio.<br>
+
+
+&nbsp;<br>
+
+
+</span>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>Quando
+o cursor do mouse estiver posicionado sobre esse gráfico, sua
+posição&nbsp;</o:p></span><span style="font-size: 10pt; font-family: Arial;">(Nza, </span><big><span class="SpellE"><span style="font-size: 10pt; font-family: Arial;">Raio, &#937;</span></span></big><span style="font-size: 10pt; font-family: Arial;"> e Mach)</span><span style="font-size: 10pt; font-family: Arial;"><o:p>
+será apresentada na parte inferior direita da área de controles.</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span><br>
+
+
+</p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt; font-weight: bold;"><span style="font-size: 10pt; font-family: Arial;">Controles de
+Dados:</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">No
+canto inferior direito da janela são apresentados todos os parâmetros
+relevantes para o desempenho em curva, além de barras de rolagem para
+variação de Nza e </span><span style="font-size: 10pt; font-family: Arial;">&#916;<sub>ISA</sub></span><span style="font-size: 10pt; font-family: Arial;">.</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">São
+apresentados os seguintes campos:<o:p></o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;&nbsp;</o:p></span></p>
+
+
+<table class="MsoTableGrid" style="border: medium none ; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+  <tbody>
+
+
+    <tr style="">
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Campo<o:p></o:p></span></b></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></b></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Unidade<o:p></o:p></span></b></p>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr style="">
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span class="SpellE"><span style="font-size: 10pt; font-family: Arial;">Zp</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Altitude-pressão<o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Pés<o:p></o:p></span></p>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr style="">
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span class="SpellE"><span style="font-size: 10pt; font-family: Arial;">Vc</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Velocidade
+calibrada<o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Nós<o:p></o:p></span></p>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr style="">
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">M<o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Número de Mach<o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Adimensional<o:p></o:p></span></p>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr style="">
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#916;<sub>ISA</sub><o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Variação de
+temperatura ISA<o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Graus Celsius<o:p></o:p></span></p>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr style="">
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span class="SpellE"><span style="font-size: 10pt; font-family: Arial;">Va</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Velocidade
+aerodinâmica<o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Nós<o:p></o:p></span></p>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr style="">
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span class="SpellE"><span style="font-size: 10pt; font-family: Arial;">Nza</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Fator de carga
+no sistema aerodinâmico<o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">g</span></p>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr style="">
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><big><span class="SpellE"><span style="font-size: 10pt; font-family: Arial;">&#934;</span></span></big><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Inclinação
+lateral<o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Graus</span></p>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr style="">
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><big><span class="SpellE"><span style="font-size: 10pt; font-family: Arial;">&#937;</span></span></big><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Velocidade
+angular</span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Graus por
+segundo</span></p>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr style="">
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span class="SpellE"><span style="font-size: 10pt; font-family: Arial;">Raio</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Raio de curva</span></p>
+
+
+      </td>
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt;">
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Metros</span></p>
+
+
+      </td>
+
+
+    </tr>
+
+
+  
+  </tbody>
+</table>
+
+
+<span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>Para
+alterar os parâmetros, insira </o:p></span><span style="font-size: 10pt; font-family: Arial;">manualmente </span><span style="font-size: 10pt; font-family: Arial;"><o:p>os
+valores desejados&nbsp;</o:p></span><span class="SpellE"><span style="font-size: 10pt; font-family: Arial;">e pressione
+"Enter", ou clique&nbsp;</span></span><span style="font-size: 10pt; font-family: Arial;">nos extremos ou
+no corpo das barras de rolagem</span><span class="SpellE"><span style="font-size: 10pt; font-family: Arial;">. Todos os
+demais parâmetros serão recalculados
+automaticamente. Em alguns casos, a atualização se dará pelo
+critério de semelhança (por exemplo, ao inserir Mach, a Zp será mantida
+constante e </span></span><span class="SpellE"><span style="font-size: 10pt; font-family: Arial;"> será calculada</span></span><span class="SpellE"><span style="font-size: 10pt; font-family: Arial;"> a Vc
+correspondente).&nbsp;</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p>Os
+pontos do diagrama e do gráfico </o:p></span><span style="font-size: 10pt; font-family: Arial;"><span style="">V </span></span><span style="font-size: 10pt; font-family: Arial;"><span style="">× Z&nbsp;</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p>estão
+correlacionados com os dados e também serão atualizados</o:p></span><span style="font-size: 10pt; font-family: Arial;"><span style=""></span></span><span style="font-size: 10pt; font-family: Arial;">.</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>Para
+maiores informações, consulte a apostila de Energia
+do Esquadrão de Formação em Ensaios em Voo (E-DA05).</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt; font-family: Arial;"><small><span style="font-size: 10pt;"><o:p>&nbsp;</o:p></span><span style="font-size: 10pt;"><o:p></o:p></span></small></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><b>Gráfico&nbsp;</b></span><span style="font-size: 10pt; font-family: Arial;"><span style=""></span><span style="font-weight: bold;">V
+</span></span><span style="font-size: 10pt; font-family: Arial; font-weight: bold;"><span style="">×</span></span><span style="font-size: 10pt; font-family: Arial;"><span style="font-weight: bold;"> Z</span>:<o:p></o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>Apresenta
+o envelope de velocidade em nós (abscissa) e altitude em pés
+(ordenada), além das linhas de Mach (internas).</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>Esse
+gráfico possui dois pontos:</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;">&nbsp;<span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;
+- O círculo azul representa os dados calibrados (Vc e Zp);</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span><span style="font-size: 10pt; font-family: Arial;">&nbsp;- O
+losango verde representa a velocidade&nbsp;</span><span style="font-size: 10pt; font-family: Arial;">aerodinâmica</span><span style="font-size: 10pt; font-family: Arial;"> (Va).</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><small style="font-family: Arial;">&nbsp;</small></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>Os
+pontos estão correlacionados com o diagrama e com os dados</o:p></span><span style="font-size: 10pt; font-family: Arial;"><span style=""></span></span><span style="font-size: 10pt; font-family: Arial;"><o:p> de
+controle.</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>É
+possível movimentar os pontos arrastando-os com o botão esquerdo do
+mouse.</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><small><span style="font-family: Arial;">N</span></small><span style="font-size: 10pt; font-family: Arial;"><o:p>o
+canto inferior direito do gráfico, há um&nbsp;</o:p></span><span style="font-size: 10pt; font-family: Arial;">símbolo</span><span style="font-size: 10pt; font-family: Arial;"><o:p> que
+indica as restrições
+de movimentação dos pontos. Para alterná-lo, clique sobre o mesmo.</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>Os
+símbolos são:</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;
+&nbsp; " + "&nbsp;movimentação em qualquer direção;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;
+&nbsp;&nbsp;" - "&nbsp;&nbsp;</o:p></span><span style="font-size: 10pt; font-family: Arial;">apenas na </span><span style="font-size: 10pt; font-family: Arial;">direção</span><span style="font-size: 10pt; font-family: Arial;"> da abscissa;</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Arial;"><o:p>" <small>|</small>
+" &nbsp;</o:p></span><span style="font-size: 10pt; font-family: Arial;">apenas </span><span style="font-size: 10pt; font-family: Arial;">na direção</span><span style="font-size: 10pt; font-family: Arial;"> da ordenada;</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;
+&nbsp; " \ "</span><span style="font-size: 10pt; font-family: Arial;">
+&nbsp;movimentação sobre uma linha</span><span style="font-size: 10pt; font-family: Arial;"></span><span style="font-size: 10pt; font-family: Arial;"> iso-Mach.</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"></span><span style="font-size: 10pt; font-family: Arial;"><br>
+
+
+</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>Quando
+o cursor do mouse estiver posicionado sobre esse gráfico, sua
+posição&nbsp;</o:p></span><span style="font-size: 10pt; font-family: Arial;">(Mach, Zp e V</span><big><span class="SpellE"><span style="font-size: 10pt; font-family: Arial;"></span></span></big><span style="font-size: 10pt; font-family: Arial;">)</span><span style="font-size: 10pt; font-family: Arial;"><o:p>
+será apresentada na parte inferior direita da área de controles.</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Para alterar os
+limites do gráfico </span><span style="font-size: 10pt; font-family: Arial;"><o:p>V&nbsp;</o:p></span><span style="font-size: 10pt; font-family: Arial;"><span style="">×</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p> Z</o:p></span><span style="font-size: 10pt; font-family: Arial;"><o:p>,
+clique com o botão direito do mouse sobre&nbsp;o gráfico e na opção
+"Alterar limites".&nbsp;</o:p></span><span style="font-size: 10pt; font-family: Arial;">Os valores
+iniciais são os mostrados na figura a seguir:</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;"><span style="font-size: 10pt; font-family: Arial;"><o:p><img style="width: 157px; height: 303px;" alt="" src="imagens/image291.PNG" height="303" width="157"></o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Indique
+os novos limites desejados para o eixo das velocidades, eixo das
+altitudes e o intervalo das linhas de Mach e clique "OK".</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Também
+é possível alterar os limites do gráfico definindo um retângulo com o
+botão esquerdo do mouse na região de interesse. Um duplo-clique com o
+botão esquerdo restaurará os limites iniciais.</span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;</span><small><span style="font-family: Arial;"></span></small></p>
+
+
+<span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span>
+<small>&nbsp;</small>
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-family: Arial; color: rgb(153, 51, 0);">Sair<o:p></o:p></span></b></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Para sair da
+ferramenta, clique no botão de fechamento da janela no canto superior
+direito.<o:p></o:p><o:p></o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+<table class="MsoNormalTable" style="background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+  <tbody>
+
+
+    <tr style="">
+
+
+      <td style="padding: 0cm; width: 15pt;" valign="top" width="20"> <span style="font-size: 10pt; font-family: Arial;"><a href="anemocalc.html"><span style="text-decoration: none;"><span style=""><img style="border: 0px solid ; width: 17px; height: 17px;" alt="" src="imagens/image001.gif" v:shapes="_x0000_i1034"></span></span></a><o:p></o:p></span>
+      </td>
+
+
+      <td style="padding: 0cm;" valign="top"> <span style="font-size: 10pt; font-family: Arial;">&nbsp;<span class="GramE"></span></span><span style="font-size: 10pt; font-family: Arial;">Calculadora
+anemométrica&nbsp;</span> </td>
+
+
+      <td style="padding: 0cm;" align="right" valign="top"> <span style="font-size: 10pt; font-family: Arial;">Conversor de
+unidades&nbsp;</span> </td>
+
+
+      <td style="padding: 0cm; width: 15pt;" align="right" valign="top" width="20"> <span style="font-size: 10pt; font-family: Arial;"><a href="conversorunidades.html"><span style="text-decoration: none;"><span style=""><img style="border: 0px solid ; width: 17px; height: 17px;" alt="" src="imagens/image002.gif" v:shapes="_x0000_i1035" border="0" height="17" width="17"></span></span></a><o:p></o:p></span>
+      </td>
+
+
+    </tr>
+
+
+  
+  </tbody>
+</table>
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+</div>
+
+
+</body>
+</html>

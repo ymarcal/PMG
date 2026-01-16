@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Diferenciação Numérica</title></head>
+<body>
+<div class="Section1">
+<table class="MsoNormalTable" style="width: 100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr style="">
+<td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" valign="top"> <span class="GramE"><b><span style="font-family: Arial;">Menu</span></b></span><b><span style="font-family: Arial;"> Funções</span></b><span style="font-family: Arial;"><o:p></o:p></span>
+</td>
+<td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" align="right" valign="top"> <span style="font-size: 10pt; font-family: Arial;"><a href="integracao.html"><span style="text-decoration: none;"><span style=""><img alt="" src="imagens/image001.gif" v:shapes="_x0000_i1025" align="top" border="0" height="17" width="17"></span></span></a></span><span style="font-family: Arial;">&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Arial; color: blue;"><a href="ajustedecurva.html"><span style="text-decoration: none;"><span style=""><img alt="" src="imagens/image002.gif" v:shapes="_x0000_i1026" align="top" border="0" height="17" width="17"></span></span></a></span><span style="font-family: Arial;"><o:p></o:p></span>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 14pt; font-family: Arial; color: rgb(153, 0, 0);"><o:p>&nbsp;</o:p></span></b></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 14pt; font-family: Arial; color: rgb(153, 0, 0);">Diferenciação
+Numérica<o:p></o:p></span></b></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Essa função
+permite diferenciar numericamente um parâmetro
+em função do tempo (ou de outro parâmetro adequado).<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Clique no <span class="GramE">menu</span> &#8220;Funções &#9658;
+Diferenciação numérica&#8221; ou clique no botão&nbsp;<img style="border: 0px solid ; width: 22px; height: 22px;" alt="" src="imagens/image091.png" v:shapes="_x0000_i1027"><span style="">&nbsp;</span>na
+Barra de Ferramentas.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">A Caixa de
+Diálogo solicitará que o usuário indique os
+parâmetros para a operação:<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 618px; height: 82px;" alt="" src="imagens/image092.png" v:shapes="_x0000_i1028"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 618px; height: 82px;" alt="" src="imagens/image093.png" v:shapes="_x0000_i1029"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; No campo &#8220;y&#8221;,
+indique o parâmetro que deseja
+diferenciar. O gráfico será atualizado conforme a seleção.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; No campo &#8220;x&#8221;,
+indique um parâmetro de tempo (ou
+outro parâmetro) adequado para diferenciação (monotônico crescente e
+sem pontos
+inválidos). Para diferenciar numericamente com espaçamento unitário,
+selecione
+o parâmetro &#8220;No. OBS.&#8221; <st1:personname productid="em x. O" w:st="on">em x. O</st1:personname>
+gráfico será atualizado conforme a seleção.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; No campo
+&#8220;Método&#8221;, indique o método de diferenciação
+numérica desejado. As opções são:<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr style="">
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 87.7pt;" valign="top" width="117">
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Opção<o:p></o:p></span></b></p>
+</td>
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 344.5pt;" valign="top" width="459">
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="">
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 87.7pt;" width="117">
+<p style="margin: 0cm 0cm 0.0001pt;"><span class="SpellE"><span class="GramE"><span style="font-size: 10pt; font-family: Arial;">dy</span></span></span><span style="font-size: 10pt; font-family: Arial;">/dx<o:p></o:p></span></p>
+</td>
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 344.5pt;" valign="top" width="459">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O valor da
+diferenciação em cada ponto é dado pela razão entre a variação do
+parâmetro y e a variação do parâmetro x em um intervalo definido ao
+redor do ponto.<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 87.7pt;" width="117">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ajuste<o:p></o:p></span></p>
+</td>
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 344.5pt;" valign="top" width="459">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">É realizado um
+ajuste de curva em um trecho ao redor de cada ponto, de onde se obtém o
+valor da derivada da curva no ponto.<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; No campo
+&#8220;Passo&#8221;, indique a opção desejada para o
+intervalo de referência da diferenciação. As opções são:<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr style="">
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 87.7pt;" valign="top" width="117">
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Opção<o:p></o:p></span></b></p>
+</td>
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 344.5pt;" valign="top" width="459">
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="">
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 87.7pt;" width="117">
+<p style="margin: 0cm 0cm 0.0001pt;"><span class="GramE"><span style="font-size: 10pt; font-family: Arial;">1</span></span><span style="font-size: 10pt; font-family: Arial;"> (anterior)<o:p></o:p></span></p>
+</td>
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 344.5pt;" valign="top" width="459">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O intervalo de
+referência para a operação é do ponto anterior ao ponto atual (n&#8211;1 até
+n).<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 87.7pt;" width="117">
+<p style="margin: 0cm 0cm 0.0001pt;"><span class="GramE"><span style="font-size: 10pt; font-family: Arial;">1</span></span><span style="font-size: 10pt; font-family: Arial;"> (seguinte)<o:p></o:p></span></p>
+</td>
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 344.5pt;" valign="top" width="459">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O intervalo de
+referência para a operação é do ponto atual ao ponto seguinte (n até
+n+1).<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 87.7pt;" width="117">
+<p style="margin: 0cm 0cm 0.0001pt;"><span class="GramE"><span style="font-size: 10pt; font-family: Arial;">2</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+</td>
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 344.5pt;" valign="top" width="459">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O intervalo de
+referência para a operação é do ponto anterior ao ponto seguinte (n&#8211;1
+até n+1).<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 87.7pt;" width="117">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">4, 6, 8, 10,
+20, 40<o:p></o:p></span></p>
+</td>
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 344.5pt;" valign="top" width="459">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O intervalo de
+referência para a operação vai de metade do passo atrás até metade do
+passo à frente do ponto (n&#8211;p/2 até n+p/2).<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Obs.: O aumento
+do passo tende a suavizar o resultado final.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; Caso o método
+selecionado seja ajuste de curva, será
+habilitado o campo &#8220;Tipo&#8221; para indicação do tipo do polinômio de
+ajuste. As
+opções são:<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr style="">
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 87.7pt;" valign="top" width="117">
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Opção<o:p></o:p></span></b></p>
+</td>
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 344.5pt;" valign="top" width="459">
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="">
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 87.7pt;" valign="top" width="117">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Linear<o:p></o:p></span></p>
+</td>
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 344.5pt;" valign="top" width="459">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ajuste do
+intervalo com polinômio de 1º grau.<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 87.7pt;" valign="top" width="117">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Quadrático<o:p></o:p></span></p>
+</td>
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 344.5pt;" valign="top" width="459">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ajuste do
+intervalo com polinômio de 2º grau.<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 87.7pt;" valign="top" width="117">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Cúbico<o:p></o:p></span></p>
+</td>
+<td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 344.5pt;" valign="top" width="459">
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ajuste do
+intervalo com polinômio de 3º grau.<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<table class="MsoTableGrid" style="border: medium none ; background: rgb(255, 204, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr style="">
+<td style="border: 1pt solid gray; padding: 0cm 5.4pt; width: 467.6pt;" valign="top" width="623"> <b><span style="font-size: 10pt; font-family: Arial;">Nota</span></b><span style="font-size: 10pt; font-family: Arial;">: A unidade
+resultante da </span><span style="font-size: 10pt; font-family: Arial;">diferenciação<span style=""> será compatível com as unidades dos parâmetros de
+entrada (por exemplo, deslocamento em <b>metros</b> e
+tempo em <b>segundos</b> resulta em velocidade em <b>metros
+por segundo</b>).<o:p></o:p></span></span>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Por se tratar
+de uma diferenciação numérica de pequenos intervalos,
+a presença de ruído no parâmetro y (até mesmo ruído branco de baixa
+intensidade), pode resultar em valores incoerentes após a
+diferenciação, em
+especial no método <span class="SpellE">dy</span>/dx,
+distorcendo
+consideravelmente o resultado. Para que a diferenciação seja adequada,
+o
+parâmetro y deve apresentar variações suaves entre os pontos. Caso haja
+ruído
+no parâmetro a ser diferenciado, é necessário aplicar um filtro para
+eliminá-lo.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">A figura abaixo
+ilustra um parâmetro <b style="">inadequado</b>
+para diferenciação, devido ao ruído presente no sinal:<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 634px; height: 360px;" alt="" src="imagens/image094.jpg" v:shapes="_x0000_i1030"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">A figura abaixo
+apresenta o mesmo parâmetro filtrado,
+tornando-o adequado para diferenciação devido à variação suave do sinal:<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 634px; height: 360px;" alt="" src="imagens/image095.jpg" v:shapes="_x0000_i1031"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ao pressionar
+&#8220;OK&#8221;, o R_DAT avisará o usuário e solicitará
+que ele confirme o prosseguimento da operação:<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 470px; height: 171px;" alt="" src="imagens/image096.png" v:shapes="_x0000_i1032"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<table class="MsoTableGrid" style="border: medium none ; background: rgb(255, 204, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr style="">
+<td style="border: 1pt solid gray; padding: 0cm 5.4pt; width: 467.6pt;" valign="top" width="623"> <b><span style="font-size: 10pt; font-family: Arial;">Nota</span></b><span style="font-size: 10pt; font-family: Arial;">: Certifique-se
+que o parâmetro de entrada não contenha ruído, pois a diferenciação de
+parâmetros ruidosos fornecerá resultados incoerentes, com ruídos
+amplificados.<o:p></o:p></span> </td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ao pressionar
+&#8220;Sim&#8221;, o R_DAT analisará <span class="GramE">os
+parâmetros &#8220;y&#8221; e &#8220;x&#8221;</span>.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Caso o parâmetro x
+não seja <span class="GramE">adequado, a operação</span>
+não poderá ser
+realizada.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Caso o parâmetro y
+contenha pontos inválidos (<span class="SpellE"><span class="GramE">NaN</span></span>),
+o R_DAT interpolará linearmente esses pontos, realizará a operação e <span class="SpellE">reatribuirá</span> <span class="SpellE">NaN</span> aos pontos
+correspondentes no parâmetro de saída.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O R_DAT
+apresentará temporariamente o resultado no gráfico
+principal. Para confirmar, dê um nome adequado ao novo parâmetro na
+Caixa de
+Diálogo e clique &#8220;OK&#8221;. Para cancelar e descartar o novo parâmetro,
+clique
+&#8220;Cancela&#8221;.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 418px; height: 82px;" alt="" src="imagens/image036.png" v:shapes="_x0000_i1033"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Após definir o
+nome e pressionar &#8220;OK&#8221;, o novo parâmetro será
+acrescentado às matrizes de trabalho antes do parâmetro &#8220;<span class="GramE">No.</span>OBS.&#8221;.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-family: Arial; color: maroon;">Lógica de Operação<o:p></o:p></span></b></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Caso o método
+escolhido para a diferenciação numérica seja <span class="SpellE">dy</span>/dx,
+a derivada no ponto será dada pela razão entre a
+variação do parâmetro y e a variação do parâmetro x em um intervalo
+definido
+pelo passo.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Caso o método
+escolhido para a diferenciação numérica seja
+ajuste de curva, a derivada no ponto será dada pela derivada analítica
+da curva
+ajustada ao intervalo definido pelo passo.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Os casos são
+ilustrados a seguir, considerando o tempo como
+parâmetro x:<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- <span class="SpellE">dy</span>/dx
+com passo <span class="GramE">1</span> e intervalo
+anterior:<o:p></o:p></span></b></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O valor da
+diferenciação no ponto n é dado pela variação
+temporal do parâmetro do ponto anterior ao ponto atual (n&#8211;1 até n).<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O 1° ponto é
+calculado pelo método do intervalo seguinte.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;&nbsp;</span><img style="border: 0px solid ; width: 121px; height: 49px;" alt="" src="imagens/image098.png" v:shapes="_x0000_i1034"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 321px; height: 208px;" alt="" src="imagens/image099.png" v:shapes="_x0000_i1035"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- <span class="SpellE">dy</span>/dx
+com passo <span class="GramE">1</span> e intervalo
+seguinte:<o:p></o:p></span></b></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O valor da
+diferenciação no ponto n é dado pela variação
+temporal do parâmetro do ponto atual ao ponto seguinte (n até n+1).<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O último ponto
+é calculado pelo método do intervalo
+anterior.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;&nbsp;</span><img style="border: 0px solid ; width: 121px; height: 49px;" alt="" src="imagens/image100.png" v:shapes="_x0000_i1036"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 321px; height: 208px;" alt="" src="imagens/image101.png" v:shapes="_x0000_i1037"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- <span class="SpellE">dy</span>/dx
+com passo <span class="GramE">2</span><o:p></o:p></span></b></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O valor da
+diferenciação no ponto n é dado pela variação
+temporal do parâmetro do ponto anterior ao ponto seguinte (n&#8211;1 até n+1).<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O 1° ponto é
+calculado pelo método do intervalo seguinte e o
+último ponto é calculado pelo método do intervalo anterior.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;&nbsp;</span><img style="border: 0px solid ; width: 121px; height: 49px;" alt="" src="imagens/image102.png" v:shapes="_x0000_i1038"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 321px; height: 208px;" alt="" src="imagens/image103.png" v:shapes="_x0000_i1039"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- <span class="SpellE">dy</span>/dx
+com passo
+maior que <span class="GramE">2</span><o:p></o:p></span></b></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O valor da
+diferenciação no ponto n é dado pela variação
+temporal do parâmetro&nbsp;no intervalo que vai de metade do passo
+atrás
+até
+metade do passo à frente do ponto (n&#8211;p/2 até n+p/2).<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O intervalo é
+truncado nos extremos do parâmetro.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Passo <span class="GramE">4</span>:<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 121px; height: 49px;" alt="" src="imagens/image104.png" v:shapes="_x0000_i1040"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 438px; height: 259px;" alt="" src="imagens/image105.png" v:shapes="_x0000_i1041"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Ajuste de curva com
+passo <span class="GramE">1</span><o:p></o:p></span></b></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Estes casos são
+iguais ao método <span class="SpellE">dy</span>/dx.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Ajuste de curva com
+passo maior que <span class="GramE">1</span><o:p></o:p></span></b></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O valor da
+diferenciação no ponto n é dado pela derivada
+analítica da curva polinomial ajustada no intervalo que vai de metade
+do passo
+atrás até metade do passo à frente do ponto (n&#8211;p/2 até n+p/2).<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Passo <span class="GramE">4</span>:<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span class="GramE"><span style="font-size: 10pt; font-family: Arial;">5</span></span><span style="font-size: 10pt; font-family: Arial;"> pontos
+ajustados&nbsp;</span><img style="border: 0px solid ; width: 14px; height: 11px;" alt="" src="imagens/image034.png" v:shapes="_x0000_i1042"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;</span>coeficientes&nbsp;</span><img style="border: 0px solid ; width: 14px; height: 11px;" alt="" src="imagens/image034.png" v:shapes="_x0000_i1042"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;</span>derivação analítica&nbsp;</span><img style="border: 0px solid ; width: 14px; height: 11px;" alt="" src="imagens/image034.png" v:shapes="_x0000_i1042"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;</span>obtenção da derivada no
+ponto.<o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 438px; height: 259px;" alt="" src="imagens/image107.png" v:shapes="_x0000_i1045"><o:p></o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<table class="MsoTableGrid" style="border: medium none ; background: rgb(255, 204, 153) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr style="">
+<td style="border: 1pt solid gray; padding: 0cm 5.4pt; width: 467.6pt;" valign="top" width="623"> <b><span style="font-size: 10pt; font-family: Arial;">Nota</span></b><span style="font-size: 10pt; font-family: Arial;">: Parâmetros
+com escala cíclica, como ângulos de <span class="SpellE">Euler</span>,
+podem ser incorretamente diferenciados entre observações que apresentam
+descontinuidade (por exemplo, proa acima de 360° volta para o início da
+escala). Para evitar esse efeito, os parâmetros devem ser alterados
+para escala contínua (função &#8220;<a href="intervalocircular.html">Alterar
+intervalo circular</a>&#8221;) antes da diferenciação.<o:p></o:p></span>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+<table class="MsoNormalTable" style="background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr style="">
+<td style="padding: 0cm; width: 15pt;" valign="top" width="20"> <span style="font-size: 10pt; font-family: Arial;"><a href="integracao.html"><span style="text-decoration: none;"><span style=""><img src="imagens/image001.gif" v:shapes="_x0000_i1046" align="bottom" border="0" height="17" width="17"></span></span></a><o:p></o:p></span></td>
+<td style="padding: 0cm;" valign="top"> <span style="font-size: 10pt; font-family: Arial;">&nbsp;Integração
+numérica<o:p></o:p></span> </td>
+<td style="padding: 0cm;" align="right" valign="top"> <span style="font-size: 10pt; font-family: Arial;">Ajuste
+de curva <o:p></o:p></span> </td>
+<td style="padding: 0cm; width: 15pt;" align="right" valign="top" width="20"> <span style="font-size: 10pt; font-family: Arial; color: blue;"><a href="ajustedecurva.html"><span style="text-decoration: none;"><span style=""><img src="imagens/image002.gif" v:shapes="_x0000_i1047" align="bottom" border="0" height="17" width="17"></span></span></a></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+</div>
+</body></html>

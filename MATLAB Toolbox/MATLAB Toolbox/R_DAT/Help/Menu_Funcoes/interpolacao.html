@@ -1,0 +1,1168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+  
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+
+  
+  
+  <title>Interpolação Tabular</title></head>
+
+<body>
+
+
+
+<div class="Section1">
+<table class="MsoNormalTable" style="width: 100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+
+  <tbody>
+
+
+
+    <tr style="">
+
+
+
+      <td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" valign="top">
+      <b><span style="font-family: Arial;">Menu
+Funções</span></b><span style="font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+      <td style="padding: 0cm; background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" align="right" valign="top">
+      <a href="operbinarias.html"><span style="font-size: 10pt; font-family: Arial;"><span style="text-decoration: none;"><span style=""><img alt="" src="imagens/image001.gif" v:shapes="_x0000_i1025" align="top" border="0" height="17" width="17"></span></span></span></a><span style="font-family: Arial;">&nbsp;&nbsp;&nbsp;</span><span style="font-size: 10pt; font-family: Arial; color: blue;"><a href="anemometria.html"><span style="text-decoration: none;"><span style=""><img alt="" src="imagens/image002.gif" v:shapes="_x0000_i1026" align="top" border="0" height="17" width="17"></span></span></a></span><span style="font-family: Arial;"><o:p></o:p></span>
+      </td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 14pt; font-family: Arial; color: rgb(153, 0, 0);"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-size: 14pt; font-family: Arial; color: rgb(153, 0, 0);">Interpolação
+Tabular<o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Essa função
+permite realizar interpolação unidimensional ou bidimensional&nbsp;</span><span style="font-size: 10pt; font-family: Arial;">de dados
+</span><span style="font-size: 10pt; font-family: Arial;"></span><span style="font-size: 10pt; font-family: Arial;">tabular</span><span style="font-size: 10pt; font-family: Arial;">es, mapeando um
+ou dois parâmetros através
+de uma
+curva ou tabela para obter um novo parâmetro. Essa operação é conhecida
+como &#8220;<span class="SpellE">table</span> <span class="SpellE">look-up</span>&#8221;.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">As operações
+disponíveis são:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<ul style="margin-top: 0cm;" type="disc">
+
+
+
+  <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Arial;"><a href="interpolacao.html#uni">Interpolação
+tabular unidimensional</a></span><span style="font-size: 10pt; font-family: Arial;" lang="EN-US"><o:p></o:p></span></li>
+
+
+
+  <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Arial;"><a href="interpolacao.html#bi">Interpolação
+tabular bidimensional</a><o:p></o:p></span></li>
+
+
+
+</ul>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; height: 10px;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Clique no <span class="GramE">menu</span> &#8220;Funções &#9658; Interpolação
+... &#9658; Unidimensional / Bidimensional&#8221; ou clique nos botões&nbsp;<img style="border: 0px solid ; width: 22px; height: 22px;" alt="" src="imagens/image156.png" v:shapes="_x0000_i1027"><span style="">&nbsp;</span>ou&nbsp;<img style="border: 0px solid ; width: 22px; height: 22px;" alt="" src="imagens/image157.png" v:shapes="_x0000_i1028"><span style="">&nbsp;</span>na
+Barra de Ferramentas.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span><b><span style="font-family: Arial; color: rgb(153, 0, 0);"><a name="uni"></a></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-family: Arial; color: rgb(153, 0, 0);">Interpolação
+Tabular Unidimensional<o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Essa operação
+mapeia um parâmetro de entrada X através de
+uma curva [x</span><sub><span style="font-family: Arial;">i</span></sub><span style="font-size: 10pt; font-family: Arial;">, <span class="SpellE">y<sub><span style="font-size: 12pt;">i</span></sub></span>]
+para obter um parâmetro de
+saída Y por interpolação.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ao escolher
+essa opção, a Caixa de Diálogo solicitará que o
+usuário indique os parâmetros para a operação:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 420px; height: 83px;" alt="" src="imagens/image158.png" v:shapes="_x0000_i1029"><o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; No campo
+&#8220;Param.&#8221;, selecione o parâmetro de entrada.
+O gráfico será atualizado conforme a seleção.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; No campo &#8220;<span class="SpellE">Extrap</span>.&#8221; indique
+o método de extrapolação desejado. Essa opção define o comportamento da
+interpolação de pontos fora do domínio da curva. As opções são:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+  <tbody>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 69.7pt;" valign="top" width="93">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Opção<o:p></o:p></span></b></p>
+
+
+
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 423pt;" valign="top" width="564">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></b></p>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 69.7pt;" valign="top" width="93">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span class="SpellE"><span class="GramE"><span style="font-size: 10pt; font-family: Arial;">NaN</span></span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 423pt;" valign="top" width="564">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valores de
+entrada fora do domínio resultam em valores de saída inválidos (<span class="SpellE"><span class="GramE">NaN</span></span>).<o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 69.7pt;" valign="top" width="93">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span class="GramE"><span style="font-size: 10pt; font-family: Arial;">0</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 423pt;" valign="top" width="564">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valores de
+entrada fora do domínio resultam em valores iguais a zero.<o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 69.7pt;" valign="top" width="93">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Max / <span class="SpellE">Min</span><o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 423pt;" valign="top" width="564">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valores de
+entrada fora do domínio são limitados aos valores máximo e mínimo
+(saturação).<o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 69.7pt;" valign="top" width="93">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Extrapolar<o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 423pt;" valign="top" width="564">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valores de
+entrada fora do domínio são extrapolados conforme o método selecionado.<o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; No campo
+&#8220;Método&#8221;, selecione o método de
+interpolação desejado. As opções são:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;&nbsp;&nbsp; </span>-
+Linear;<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;&nbsp;&nbsp; </span>-
+Vizinho;<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;&nbsp;&nbsp; </span>- <span class="SpellE">Spline</span>; e<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;&nbsp;&nbsp; </span>-
+Cúbico.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; No campo
+&#8220;Curva&#8221;, clique no botão&nbsp;<img style="border: 0px solid ; width: 121px; height: 20px;" alt="" src="imagens/image159.png" v:shapes="_x0000_i1030"><span style="">&nbsp;</span>para
+procurar o arquivo com
+a curva de interpolação.
+Na janela que surgirá, selecione o tipo de arquivo que contém a curva
+de
+interpolação no campo &#8220;Arquivos do tipo:&#8221;. As opções são &#8220;Dados em
+formato
+texto <span class="GramE">(.</span><span class="SpellE">txt</span>, .<span class="SpellE">dat</span>)&#8221;
+ou &#8220;Planilha Excel (.<span class="SpellE">xls</span>)&#8221;.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 426px; height: 296px;" alt="" src="imagens/image160.png" v:shapes="_x0000_i1031"><o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Após localizar
+o arquivo, clique &#8220;Abrir&#8221;. O R_DAT abrirá e
+analisará o conteúdo do arquivo.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Para a correta
+abertura, o arquivo deve seguir as seguintes
+formatações:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;">Arquivo texto:<o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Duas colunas
+numéricas [x</span><sub><span style="font-family: Arial;">i</span></sub><span style="font-size: 10pt; font-family: Arial;">, <span class="SpellE">y<sub><span style="font-size: 12pt;">i</span></sub></span>]
+separadas por espaços,
+tabulações, vírgulas ou ponto-e-vírgula, com ponto como separador decimal.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Linhas de
+cabeçalho com nomes dos parâmetros e unidades são opcionais.</span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-indent: 35.45pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;">Planilha Excel:
+<o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Duas colunas
+numéricas [x</span><sub><span style="font-family: Arial;">i</span></sub><span style="font-size: 10pt; font-family: Arial;">, <span class="SpellE">y<sub><span style="font-size: 12pt;">i</span></sub></span>].<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Linhas de
+cabeçalho com nomes dos parâmetros e unidades são opcionais.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Exemplos:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;">&nbsp; <img style="border: 0px solid ; width: 192px; height: 108px;" alt="" src="imagens/image161.png" v:shapes="_x0000_i1032"><o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;">&nbsp; <img style="border: 0px solid ; width: 222px; height: 205px;" alt="" src="imagens/image162.png" v:shapes="_x0000_i1033"><o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Depois de abrir
+o arquivo, o R_DAT irá apresentar a curva em
+uma janela à parte, para que o usuário visualize e verifique a correção
+da
+mesma.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O intervalo dos
+dados de entrada será apresentado na borda
+inferior do gráfico, em vermelho.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 566px; height: 482px;" alt="" src="imagens/image163.png" v:shapes="_x0000_i1034"><o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Pressione &#8220;OK&#8221;
+para fechar a janela. Caso necessário, é
+possível substituir a curva repetindo o procedimento.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ao pressionar
+&#8220;OK&#8221; na Caixa de Diálogo, o R_DAT realizará a
+interpolação e apresentará temporariamente o resultado no gráfico
+principal.
+Para confirmar, dê um nome adequado ao novo parâmetro na Caixa de
+Diálogo e
+clique &#8220;OK&#8221;. Para cancelar e descartar o novo parâmetro, clique
+&#8220;Cancela&#8221;.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 418px; height: 82px;" alt="" src="imagens/image036.png" v:shapes="_x0000_i1035"><o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Após definir o
+nome e pressionar &#8220;OK&#8221;, o novo parâmetro será
+acrescentado às matrizes de trabalho antes do parâmetro &#8220;<span class="GramE">No.</span>OBS.&#8221;.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial; color: maroon;">Lógica
+de
+Operação<o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Cada ponto do
+parâmetro de entrada é mapeado através da
+curva de interpolação, resultando em um ponto correspondente no
+parâmetro de
+saída:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial; color: maroon;"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 479px; height: 373px;" alt="" src="imagens/image165.png" v:shapes="_x0000_i1036"><o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span><b><span style="font-family: Arial; color: rgb(153, 0, 0);"><a name="bi"></a></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b><span style="font-family: Arial; color: rgb(153, 0, 0);">Interpolação
+Tabular Bidimensional<o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Essa operação
+mapeia dois parâmetros de entrada X e Y
+através de uma tabela <span class="SpellE">z<sub><span style="font-size: 12pt;">ij</span></sub></span>
+= f <span class="GramE">( </span>x</span><sub><span style="font-family: Arial;">i</span></sub><span style="font-size: 10pt; font-family: Arial;">, <span class="SpellE">y<sub><span style="font-size: 12pt;">j</span></sub></span>
+) para obter um parâmetro de
+saída Z por interpolação bidimensional. Essa operação é conhecida como &#8220;<span class="SpellE">table</span> <span class="SpellE">look-up</span>&#8221;.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ao escolher
+essa opção, a Caixa de Diálogo solicitará que o
+usuário indique os parâmetros para a operação:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 619px; height: 82px;" alt="" src="imagens/image166.png" v:shapes="_x0000_i1037"><o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; Nos campos
+&#8220;x&#8221; e &#8220;y&#8221;, selecione os parâmetros de entrada.
+O gráfico será atualizado conforme a seleção.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; Nos campo &#8220;<span class="SpellE">Extrap</span>.&#8221;
+indique o método de extrapolação desejado. Essa opção define o
+comportamento da
+interpolação de pontos fora do domínio da curva. As opções são:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<table class="MsoTableGrid" style="border: medium none ; margin-left: 1.9pt; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
+
+
+
+  <tbody>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 69.7pt;" valign="top" width="93">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Opção<o:p></o:p></span></b></p>
+
+
+
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 423pt;" valign="top" width="564">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><b style=""><span style="font-size: 10pt; font-family: Arial;">Descrição<o:p></o:p></span></b></p>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 69.7pt;" valign="top" width="93">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span class="SpellE"><span class="GramE"><span style="font-size: 10pt; font-family: Arial;">NaN</span></span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 423pt;" valign="top" width="564">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valores de
+entrada fora do domínio resultam em valores de saída inválidos (<span class="SpellE"><span class="GramE">NaN</span></span>).<o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 69.7pt;" valign="top" width="93">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span class="GramE"><span style="font-size: 10pt; font-family: Arial;">0</span></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 423pt;" valign="top" width="564">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valores de
+entrada fora do domínio resultam em valores iguais a zero.<o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr style="">
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 69.7pt;" valign="top" width="93">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Max / <span class="SpellE">Min</span><o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+      <td style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 423pt;" valign="top" width="564">
+      
+      
+      <p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Valores de
+entrada fora do domínio são limitados aos valores máximo e mínimo
+(saturação).<o:p></o:p></span></p>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;</span>Obs.: não é possível
+extrapolar.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; No campo
+&#8220;Método&#8221;, selecione o método de
+interpolação desejado. As opções são:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;&nbsp;&nbsp; </span>-
+Linear;<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;&nbsp;&nbsp; </span>-
+Vizinho;<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;&nbsp;&nbsp; </span>- <span class="SpellE">Spline</span>; e <o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;&nbsp;&nbsp; </span>-
+Cúbico.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">&#9679; No campo
+&#8220;Tabela&#8221;, clique no botão&nbsp;</span><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 121px; height: 20px;" alt="" src="imagens/image159.png" v:shapes="_x0000_i1030"></span><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;</span>para procurar o arquivo com
+a tabela de
+interpolação. Na janela que surgirá, selecione o tipo de arquivo que
+contém a
+tabela de interpolação no campo &#8220;Arquivos do tipo:&#8221;. As opções são
+&#8220;Dados em
+formato texto (.<span class="SpellE">txt</span>, .<span class="SpellE">dat</span>)&#8221;
+ou &#8220;Planilha Excel (.<span class="SpellE">xls</span>)&#8221;.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 426px; height: 296px;" alt="" src="imagens/image167.png" v:shapes="_x0000_i1039"><o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Após localizar
+o arquivo, clique &#8220;Abrir&#8221;. O R_DAT abrirá e
+analisará o conteúdo do arquivo.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Para a correta
+abertura, o arquivo deve seguir as seguintes
+formatações:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;">Arquivo texto<o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Tabela <span class="GramE">numérica sendo a 1ª coluna os valores de x, a
+1ª linha os valores
+de y e o corpo</span> os valores de z, com ponto como separador
+decimal.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- O 1º elemento pode
+ser qualquer valor, pois será ignorado.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Não pode haver
+linhas de cabeçalho.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;"><span style="">&nbsp; </span></span><span class="SpellE"><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;" lang="ES">NaN</span></span><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;" lang="ES"><span style="">&nbsp; </span>y1<span style="">&nbsp;&nbsp;&nbsp;
+</span>y2<span style="">&nbsp;&nbsp;&nbsp;
+</span>y3<span style="">&nbsp;&nbsp; </span>...<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;" lang="ES"><span style="">&nbsp; </span><span class="GramE">x1</span><span style="">&nbsp;&nbsp; </span>z11<span style="">&nbsp;&nbsp;
+</span>z12<span style="">&nbsp;&nbsp; </span>z13<span style="">&nbsp; </span>...<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;" lang="ES"><span style="">&nbsp; </span>x2<span style="">&nbsp;&nbsp;
+</span>z21<span style="">&nbsp;&nbsp; </span>z22<span style="">&nbsp;&nbsp; </span>z23<span style="">&nbsp;
+</span>...<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;" lang="ES"><span style="">&nbsp; </span></span><span class="GramE"><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">x3</span></span><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;"><span style="">&nbsp;&nbsp; </span>z31<span style="">&nbsp;&nbsp;
+</span>z32<span style="">&nbsp;&nbsp; </span>z33<span style="">&nbsp; </span>...<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;"><span style="">&nbsp; </span><span class="GramE">:<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>:</span><span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>:<span style="">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-indent: 35.45pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;">Planilha Excel<o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- <span class="GramE">Análoga
+à formatação do arquivo texto</span>.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp; </span>- Linhas e/ou
+colunas contendo texto serão ignoradas.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Exemplos:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;">&nbsp; <img style="border: 0px solid ; width: 467px; height: 139px;" alt="" src="imagens/image168.png" v:shapes="_x0000_i1040"><o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;">&nbsp; <img style="border: 0px solid ; width: 391px; height: 171px;" alt="" src="imagens/image169.png" v:shapes="_x0000_i1041"><o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Depois de abrir
+o arquivo, o R_DAT irá apresentar uma
+representação gráfica da tabela em uma janela à parte, para que o
+usuário
+visualize e verifique a correção da mesma. A tabela é representada como
+uma
+superfície em escala cromática em que cada vértice representa um
+elemento da
+tabela.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">O domínio da
+tabela (cobertura dos dados em x e y) é
+apresentado em vermelho e os dados de entrada são apresentados em azul
+no plano
+<span class="SpellE">xy</span>.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 720px; height: 547px;" alt="" src="imagens/image170.png" v:shapes="_x0000_i1042"><o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Pressione &#8220;OK&#8221;
+para fechar a janela. Caso necessário, é
+possível substituir a tabela repetindo o procedimento.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Ao pressionar
+&#8220;OK&#8221; na Caixa de Diálogo, o R_DAT realizará a
+interpolação e apresentará temporariamente o resultado no gráfico
+principal.
+Para confirmar, dê um nome adequado ao novo parâmetro na Caixa de
+Diálogo e
+clique &#8220;OK&#8221;. Para cancelar e descartar o novo parâmetro, clique
+&#8220;Cancela&#8221;.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 418px; height: 82px;" alt="" src="imagens/image036.png" v:shapes="_x0000_i1035"></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Após definir o
+nome e pressionar &#8220;OK&#8221;, o novo parâmetro será
+acrescentado às matrizes de trabalho antes do parâmetro &#8220;<span class="GramE">No.</span>OBS.&#8221;.<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial; color: maroon;">Lógica
+de
+Operação<o:p></o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;">Cada par de
+pontos dos parâmetros de entrada são mapeados
+pela tabela de interpolação, resultando em um ponto correspondente no
+parâmetro
+de saída:<o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><b style=""><span style="font-size: 10pt; font-family: Arial; color: maroon;"><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial;"><img style="border: 0px solid ; width: 414px; height: 379px;" alt="" src="imagens/image171.png" v:shapes="_x0000_i1044"><o:p></o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+<table class="MsoNormalTable" style="background: rgb(255, 228, 176) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+
+  <tbody>
+
+
+
+    <tr style="">
+
+
+
+      <td style="padding: 0cm; width: 15pt;" valign="top" width="20">
+      <span style="font-size: 10pt; font-family: Arial;"><a href="operbinarias.html"><span style="text-decoration: none;"><span style=""><img alt="" src="imagens/image001.gif" v:shapes="_x0000_i1045" border="0" height="17" width="17"></span></span></a><o:p></o:p></span></td>
+
+
+
+      <td style="padding: 0cm;" valign="top">
+      <span style="font-size: 10pt; font-family: Arial;">&nbsp;Operações binárias<o:p></o:p></span>
+      </td>
+
+
+
+      <td style="padding: 0cm;" align="right" valign="top">
+      <span style="font-size: 10pt; font-family: Arial;">Conversões
+anemométricas <o:p></o:p></span>
+      </td>
+
+
+
+      <td style="padding: 0cm; width: 15pt;" align="right" valign="top" width="20">
+      <span style="font-size: 10pt; font-family: Arial; color: blue;"><a href="anemometria.html"><span style="text-decoration: none;"><span style=""><img src="imagens/image002.gif" v:shapes="_x0000_i1046" align="bottom" border="0" height="17" width="17"></span></span></a></span><span style="font-size: 10pt; font-family: Arial;"><o:p></o:p></span></td>
+
+
+
+    </tr>
+
+
+
+  
+  
+  </tbody>
+</table>
+
+
+
+<p style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 10pt; font-family: Arial;"><o:p>&nbsp;</o:p></span></p>
+
+
+
+</div>
+
+
+
+</body></html>
